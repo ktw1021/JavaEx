@@ -12,6 +12,8 @@ public class CharEx {
 		
 		String str = "A한"; 
 		System.out.println(str);
-	}
+		int a = 0111;
+		System.out.println(a);
+		}
 
 }
