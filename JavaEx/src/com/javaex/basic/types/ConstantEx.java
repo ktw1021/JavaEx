@@ -1,5 +1,7 @@
 package com.javaex.basic.types;
 
+import java.util.Calendar;
+
 public class ConstantEx {
 
 	public static void main(String[] args) {
@@ -14,8 +16,18 @@ public class ConstantEx {
 		
 		// 상수의 사용 목적
 		// 1. 코드 가독성을 높인다.
-		// 2. 특정 데이터를 한 곳에서 일괄 관리한다. 
+		// 2. 특정 데이터를 한 곳에서 일괄 관리한다.
+		// 3. 코드를 변경할 수 없다(불변성).
 		
+		System.out.println(Calendar.OCTOBER);
+		
+		//형 변환-자료유실(강제타입변환)
+		
+		int num1 = 2000000;
+		float num2 = 1.2F;
+		float multiply = (byte)num1 * (byte)num2;
+		
+		System.out.println(multiply);
 	}
 
 }
