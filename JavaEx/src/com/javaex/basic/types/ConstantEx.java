@@ -8,6 +8,8 @@ public class ConstantEx {
 		
 		System.out.println(PI);
 		System.out.println(SPEED_LIMIT);
+		
+		System.out.println("현재 제한 속도는 " + SPEED_LIMIT + "km입니다.");
 	}
 
 }
