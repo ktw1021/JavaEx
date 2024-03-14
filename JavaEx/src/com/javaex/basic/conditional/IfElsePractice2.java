@@ -25,6 +25,7 @@ public class IfElsePractice2 {
 		else {
 			System.out.println("상담원에게 문의하세요.");
 		}
+		scanner.close();
 	}
 
 }
