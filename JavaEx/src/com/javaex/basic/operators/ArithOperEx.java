@@ -9,8 +9,8 @@ public class ArithOperEx {
 		incrOperTest();
 		//	할당연산
 		assignOperTest();
-
 	}
+	
 	public static void assignOperTest() {
 		//	= : 우선순위 가장 마지막
 		int a = 7;
@@ -21,6 +21,7 @@ public class ArithOperEx {
 		a += b;
 		System.out.println(a);	//	13
 	}
+	
 	public static void incrOperTest() {
 		int a = 10;
 		int b;
@@ -36,6 +37,7 @@ public class ArithOperEx {
 		System.out.println(b);	//	10
 		System.out.println(a);	//	11
 	}
+	
 	public static void arithOperTest() {
 		int a = 7;
 		int b = 3;
