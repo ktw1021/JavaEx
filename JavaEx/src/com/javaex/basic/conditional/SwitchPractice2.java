@@ -31,6 +31,7 @@ public class SwitchPractice2 {
 			degree = "제대로 된 점수를 입력하시오.";
 		}
 		System.out.print(degree);
+		scanner.close();
 	}
 
 }

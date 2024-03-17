@@ -2,12 +2,15 @@ package com.javaex.basic.types;
 
 public class IntLongEx {
 	public static void main(String[] args) {
+		
+		/*
 		int intVar1;
-		int intVar2;
 		intVar1 = 2024;
 		intVar2 = 1234567890;		// out of range
 		System.out.println(intVar1);
 //		System.out.println(intVar2);	// 초기화 필요
+		
+		*/
 		
 		long longVar1;
 		long longVar2;
