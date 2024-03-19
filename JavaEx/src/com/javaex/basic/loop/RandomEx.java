@@ -2,7 +2,7 @@ package com.javaex.basic.loop;
 
 import java.util.Random;
 
-public class fun {
+public class RandomEx {
 
 	public static void main(String[] args) {
 		
