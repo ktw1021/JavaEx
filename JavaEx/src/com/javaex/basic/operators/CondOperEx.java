@@ -13,7 +13,6 @@ public class CondOperEx {
 		System.out.println(a%2==0?"짝수":"홀수");
 		
 		int score = 70;
-		String message;
 		
 		/* score가 80점 이상: GOOD
 		   score가 50~80점 : PASS
