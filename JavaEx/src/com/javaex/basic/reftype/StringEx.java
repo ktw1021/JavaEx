@@ -4,7 +4,7 @@ public class StringEx {
 
 	public static void main(String[] args) {
 		Person person = new Person("john",30);
-		String 
+		
 		String a = "john";
 		String b = "john";
 		if(person.name.equals(a)) {
