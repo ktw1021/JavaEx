@@ -1,7 +1,12 @@
 package com.javaex.basic.loop;
 
-public class LoopPractice5 {
+public class BreakEx {
 
+	//	6과 14로 모두 나누어 떨어지는 숫자 찾기
+	//	반복 횟수를 정확하게 알기 힘든 경우 -> while
+	//	반복 횟수를 정확하게 알 수 있는 경우 -> for 
+	
+	
 	public static void main(String[] args) {
 		
 		int a= 0;
@@ -34,8 +39,7 @@ public class LoopPractice5 {
 		System.out.println(p);
 		
 		
-		int c = 1;
-		for(; ; c++) {
+		for(int c = 1; ; c++) {
 				if ((c%6==0) && (c%14==0)) {
 					System.out.println(c);
 					break;

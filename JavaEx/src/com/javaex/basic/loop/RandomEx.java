@@ -12,6 +12,16 @@ public class RandomEx {
 			int r = random.nextInt(45)+1;
 			System.out.print(r+"\t");
 		}
+		
+		System.out.println("");
+		
+		
+		int i = 0;
+		while (i!=6) {
+			i++;
+			int num = (int)(Math.random()*45)+1;
+			System.out.print(num+"\t");
+		}
 	}
 
 }
