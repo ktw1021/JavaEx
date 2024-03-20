@@ -20,6 +20,9 @@ public class BreakEx {
 				}	
 			}
 		
+		
+		// 	break;는 while문 전체를 탈출하는 역할
+		
 		int l = 0;
 		while (true) {
 			l++;
