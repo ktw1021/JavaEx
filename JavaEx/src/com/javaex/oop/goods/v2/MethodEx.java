@@ -18,7 +18,6 @@ public class MethodEx {
 
 	public static void main(String[] args) {
 		MethodEx ai = new MethodEx(1, 2);
-		MethodEx sum = new MethodEx(3, 2);
 		int k = ai.getSum(1, 2);
 		
 		System.out.println(k);

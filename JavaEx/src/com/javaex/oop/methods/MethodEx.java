@@ -29,10 +29,14 @@ public class MethodEx {
 		// 2. getSum2 메서드에서, num1, num2, num3를 '매개'로, sum2 값을 '계산해 반환'
 		System.out.println(sum2);
 		
-		
+		double sum3 = getSum3(num1, num2);
+		System.out.println(sum3);
 	}
-
-	
+	//	매개변수 O, 리턴 O
+	private static double getSum3(double num1, double num2) {
+		System.out.println("'static double(voidX)': 매개변수 있고, 리턴도 있는 메서드");
+		return num1 + num2;
+	}
 	
 	private static void printMessage() {
 		//	매개변수 X
@@ -45,8 +49,9 @@ public class MethodEx {
 				+ "(String 타입이기 때문에 반드시 안에서 String 타입을 반환\n\n";
 		
 	}
+	//	매개변수 O, 리턴 X
 	private static void printDevide(int num1, int num2) {
-		//	리턴 타입이 없어도 return 할 수 있음
+		//	리턴 타입이 없어도 return 할 수는 있음
 		//	남은 코드를 더이상 수행하지 않고 제어를 돌려줄 때  
 		System.out.println("static 'void': 매개변수 있고, 리턴이 없는 메서드\n");
 		if (num2 == 0) {
