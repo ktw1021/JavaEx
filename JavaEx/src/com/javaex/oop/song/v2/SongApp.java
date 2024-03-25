@@ -1,4 +1,4 @@
-package com.javaex.oop.song.v1;
+package com.javaex.oop.song.v2;
 
 public class SongApp {
 
@@ -33,6 +33,10 @@ public class SongApp {
 		song1.showInfo();
 		song2.showInfo();
 		song3.showInfo();
+		System.out.println();
+		
+		Song s1 = new Song("네버엔딩스토리","김태원","이얍","김태원",1994,2);
+		s1.showInfo();
 		
 	}
 

@@ -1,9 +1,18 @@
-package com.javaex.oop.point.v1;
+package com.javaex.oop.point.v2;
 
 public class Point {
 	//	필드 (은닉)
 	private int x;
 	private int y;
+	
+	public Point() {
+		
+	}
+	
+	public Point(int x, int y) {
+		this.x=x;
+		this.y=y;
+	}
 	
 	//	getters/setters
 	public int getX() {

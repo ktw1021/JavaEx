@@ -1,6 +1,8 @@
-package com.javaex.oop.goods.v2;
+package com.javaex.oop.goods.v3;
 
-//	v2. private
+//	v4. this
+//	현재 자기 자신의 객체를 의미
+//	this() : 현재 클래스 내부의 다른 생성자를 호출할 때 사용
 public class GoodsEx {
 	// 필드 선언
 	// instance 영역
@@ -11,8 +13,25 @@ public class GoodsEx {
 	public GoodsEx() {
 		
 	}
+	
+	//	name 필드 생성자
+	public GoodsEx(String name) {
+		this.name = name;
+		System.out.println("name 필드 초기화 생성자");
+	}
+	
+	public GoodsEx(String name, int price) {
+		this.name=name;
+		this.price=price;
+		System.out.println("name, price 필드 초기화 생성자");
+	}
+	//	전체 필드 생성자
 	public GoodsEx(String name, int price, int age) {
-		
+		// name 필드 생성자를 출력
+		this(name);
+		this.price=price;
+		this.age=age;
+		System.out.println("전체 필드 초기화 생성자");
 	}
 	
 	//	생성자를 하나도 선언하지 않을 경우

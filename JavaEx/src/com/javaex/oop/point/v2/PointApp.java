@@ -1,4 +1,4 @@
-package com.javaex.oop.point.v1;
+package com.javaex.oop.point.v2;
 
 public class PointApp {
 

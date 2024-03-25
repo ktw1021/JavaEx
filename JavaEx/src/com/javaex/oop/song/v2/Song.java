@@ -1,4 +1,4 @@
-package com.javaex.oop.song.v1;
+package com.javaex.oop.song.v2;
 
 public class Song {
 	//	필드
@@ -8,6 +8,30 @@ public class Song {
 	private String composer;
 	private int year;
 	private int track;
+	
+	public Song () {
+		
+	}
+	
+	public Song (String title) {
+		this.title=title;
+		System.out.println("title 생성자");
+	}
+	
+	public Song (String title, String artist) {
+		this.title=title;
+		this.artist=artist;
+		System.out.println("title, artist 생성자");
+	}
+	
+	public Song (String title, String artist, String album, String composer, int year, int track) {
+		this(title,artist);
+		this.album=album;
+		this.composer=composer;
+		this.year=year;
+		this.track=track;
+		System.out.println("전체 생성자");
+	}
 	
 	//	getters/setters
 	public String getTitle() {
