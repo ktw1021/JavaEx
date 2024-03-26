@@ -1,6 +1,14 @@
 package com.javaex.oop.tv.v1;
 
+//	채널 범위 1~255
+//	볼륨 범위 0~100
 public class TV {
+	//	상수
+	private static final int MIN_CHANNEL=1;
+	private static final int MAX_CHANNEL=255;
+	private static final int MIN_VOLUME=0;
+	private static final int MAX_VOLUME=100;
+	
 	private int channel;
 	private int volume;
 	private boolean power;
@@ -12,7 +20,6 @@ public class TV {
 	}
 	
 	public TV () {
-		
 	}
 	
 	public int getChannel() {
@@ -21,6 +28,7 @@ public class TV {
 	public int getVolume() {
 		return volume;
 	}
+	//	boolean의 getter 형태
 	public boolean isPower() {
 		return power;
 	}
@@ -29,34 +37,34 @@ public class TV {
 		this.power=power;
 	}
 	public void channel(int channel) {
-		if (channel<=255 && channel>=1) {
+		if (channel<=MAX_CHANNEL && channel>=MIN_CHANNEL) {
 			this.channel=channel;
 		}
 	}
 	
 	public void channel(boolean up) {
-		if (channel<=255 && channel>=1) {
+		if (channel<=MAX_CHANNEL && channel>=MIN_CHANNEL) {
 			if (up==true) {
-				channel+=1;
+				this.channel++;
 			}
 			else {
-				channel-=1;
+				this.channel--;
 			}
 			
 		}
 	}
 	public void volume(int volume) {
-		if (volume>=0&&volume<=100) {
+		if (volume>=MIN_VOLUME&&volume<=MAX_VOLUME) {
 			this.volume=volume;
 		}
 	}
 	public void volume(boolean up) {
-		if (volume>=0&&volume<=100) {
+		if (volume>=MIN_VOLUME&&volume<=MAX_VOLUME) {
 		if (up==true) {
-			volume+=1;
+			this.volume++;
 		}
 		else {
-			volume-=1;
+			this.volume--;
 		}
 		}
 	}
