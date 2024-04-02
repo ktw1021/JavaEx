@@ -130,7 +130,17 @@ public class StringEx {
 		System.out.print("4)");
 		System.out.println(str4.length());
 		//	5)
-		
+		System.out.print("5)");
+		System.out.println(str4.replace("a", "R"));
+		//	6)
+		System.out.print("6)");
+		System.out.println(str4.replace("abc","123"));
+		//	7)
+		System.out.print("7)");
+		System.out.println(str4.substring(0,3));
+		//	8)
+		System.out.print("8)");
+		System.out.println(str4.toUpperCase());
 		}
 		
 	}
