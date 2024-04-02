@@ -1,6 +1,6 @@
 package com.javaex.api.objectclass.ex4;
 
-public class CloneTest {
+public class CloneTest extends java.lang.Object {
 
 	public static void main(String[] args) {
 		Scoreboard s1 = new Scoreboard(new int [] {10, 20, 30, 40}) ;
