@@ -47,6 +47,6 @@ public class ArrayMultiDimEx {
             }
             System.out.println("");
         }
-        
+        System.out.println(a[1][1]);
         }
     }
