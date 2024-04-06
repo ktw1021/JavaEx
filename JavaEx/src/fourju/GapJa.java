@@ -38,6 +38,22 @@ public class GapJa extends BirthDay {
 	case 2:	yungan="임"; break;	case 3:	yungan="계"; break;
 	}	setYungan(yungan);
 	
+	if (yungan=="갑" || yungan=="기") {
+		wolgan = "병";
+	}
+	else if (yungan=="을" || yungan=="경") {
+		wolgan = "무";
+	}
+	else if (yungan=="병" || yungan=="신") {
+		wolgan = "경";
+	}
+	else if (yungan=="정" || yungan=="임") {
+		wolgan = "임";
+	}
+	if (yungan=="무" || yungan=="계") {
+		wolgan = "갑";
+	}
+	
 	int jiji = year%12;
 	yunji = "";
 	switch (jiji) {
@@ -49,8 +65,12 @@ public class GapJa extends BirthDay {
 	int wol = month;
 	wolji = ""; 
 	switch(wol) {
-	case 11: wolji="쥐"; break; case 12: 
+	case 11: wolji="자"; break; case 12: wolji="축"; break; case 1: wolji="인"; break;
+	case 2: wolji="묘"; break; case 3: wolji="진"; break; case 4: wolji="사"; break;
+	case 5: wolji="오"; break; case 6: wolji="미"; break; case 7: wolji="신"; break;
+	case 8: wolji="유"; break; case 9: wolji="술"; break; case 10: wolji="해"; break;
 	}
+	
 	
 	int si = hour;
 	siji = "";

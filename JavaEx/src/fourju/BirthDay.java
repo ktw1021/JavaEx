@@ -7,8 +7,6 @@ public class BirthDay {
 	private int date;
 	private int hour;
 	
-
-	
 	public BirthDay() {
 		
 	}
