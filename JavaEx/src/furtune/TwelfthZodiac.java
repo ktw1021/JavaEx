@@ -50,7 +50,11 @@ public class TwelfthZodiac {
         String musicalNote;
         String heavenlyStems;
 
-        public ZodiacInfo(String animal, String yinYang, String element, String season, String lunarMonth,
+        public ZodiacInfo() {
+			super();
+		}
+
+		public ZodiacInfo(String animal, String yinYang, String element, String season, String lunarMonth,
                           String solarTerms, String time, String direction, String musicalNote, String heavenlyStems) {
             this.animal = animal;
             this.yinYang = yinYang;

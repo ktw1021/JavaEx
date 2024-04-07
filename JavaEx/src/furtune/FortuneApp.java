@@ -6,19 +6,22 @@ public class FortuneApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
+        InputDate gapja = new InputDate();
+        
         System.out.print("연도를 입력하세요: ");
-        String year = scanner.next();
+        gapja.inputYear = scanner.next();
         System.out.print("월을 입력하세요: ");
-        String month = scanner.next();
+        gapja.inputMonth = scanner.next();
         System.out.print("일을 입력하세요: ");
-        String day = scanner.next();
+        gapja.inputDay = scanner.next();
         System.out.print("시를 입력하세요: ");
-        int hour = scanner.nextInt();
+        gapja.inputHour = scanner.nextInt();
         
         ApiCaller apiCaller = new ApiCaller();
         try {
             // API 호출을 통해 결과를 받아옵니다.
-            String result = apiCaller.callApi(year, month, day);
+            String result = apiCaller.callApi
+            		(gapja.inputYear, gapja.inputMonth, gapja.inputDay);
             
             // 결과를 XmlParser 객체에 전달하여 파싱하고 출력합니다.
             XmlParser parser = new XmlParser();
@@ -26,5 +29,8 @@ public class FortuneApp {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        
     }
+		
+	
 }
