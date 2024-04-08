@@ -81,18 +81,7 @@ public class ZodiacManager {
         		(zodiacName) ? zodiacMap.get(zodiacName).getHeavenlyStems() : "해당하는 지지가 없습니다.";
     }
 
-	@Override
-	public int hashCode() {
-		// TODO Auto-generated method stub
-		return super.hashCode();
-	}
 
-	@Override
-	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
-	}
-    
 
    }
 

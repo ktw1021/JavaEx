@@ -3,6 +3,7 @@ package furtune;
 import java.util.Scanner;
 
 public class FortuneApp {
+	
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -29,7 +30,6 @@ public class FortuneApp {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
         scanner.close();
     }
 		

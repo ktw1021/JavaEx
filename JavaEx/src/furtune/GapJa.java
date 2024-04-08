@@ -1,16 +1,19 @@
 package furtune;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class GapJa {
-	String ilju;
-	public static String ilgan;
-	public static String ilji;
 	
-	public static String yungan;
-	public static String yunji;
-	public static String wolgan;
-	public static String wolji;
-	static String sigan;
-	static String siji;
+	private String ilju;
+	private static String ilgan;
+	private static String ilji;
+	private static String yungan;
+	private static String yunji;
+	private static String wolgan;
+	private static String wolji;
+	private static String sigan;
+	private static String siji;
 	
 	public static String getYungan() {
 		return yungan;
@@ -68,74 +71,73 @@ public class GapJa {
 		ilji = newIlji;
 	}
 	
-
+	private static Map<String, GapJa> EightKeyMap = new HashMap<>();
+	
 
 	public static void transformer(String lunYear, String lunMonth, String lunDay,int inputHour) {
 
     //	연간
     int chungan1 = Integer.parseInt(lunYear)%10;
-	yungan="";
+	
 	switch (chungan1) {
-	case 4:	yungan="갑"; break;	case 5:	yungan="을"; break;	case 6:	yungan="병"; break;	case 7:	yungan="정"; break;
-	case 8:	yungan="무"; break;	case 9:	yungan="기"; break;	case 0:	yungan="경"; break;	case 1:	yungan="신"; break;
-	case 2:	yungan="임"; break;	case 3:	yungan="계"; break;
+	case 4:	setYungan("갑"); break;	case 5:	setYungan("을"); break;	case 6:	setYungan("병"); break;	case 7:	setYungan("정"); break;
+	case 8:	setYungan("무"); break;	case 9:	setYungan("기"); break;	case 0:	setYungan("경"); break;	case 1:	setYungan("신"); break;
+	case 2:	setYungan("임"); break;	case 3:	setYungan("계"); break;
 	}	
 	
     //	월간	
 	int chungan2 = Integer.parseInt(lunMonth);
 	if (yungan.equals("갑") || yungan.equals("기")) { 
 	switch(chungan2) { 
-	case 1:	wolgan = "병"; break; case 2: wolgan = "정"; break; case 3: wolgan = "무"; break;
-	case 4: wolgan = "기"; break; case 5: wolgan = "경"; break; case 6: wolgan = "신"; break;
-	case 7:	wolgan = "임"; break; case 8: wolgan = "계"; break; case 9: wolgan = "갑"; break;
-	case 10: wolgan = "을"; break; case 11: wolgan = "병"; break; case 12: wolgan = "정"; break;}
+	case 1:	setWolgan("병"); break; case 2: setWolgan("정"); break; case 3: setWolgan("무"); break;
+	case 4: setWolgan("기"); break; case 5: setWolgan("경"); break; case 6: setWolgan("신"); break;
+	case 7:	setWolgan("임"); break; case 8: setWolgan("계"); break; case 9: setWolgan("갑"); break;
+	case 10: setWolgan("을"); break; case 11: setWolgan("병"); break; case 12: setWolgan("정"); break;}
 	}
 	else if (yungan.equals("을") || yungan.equals("경")) {
 		switch (chungan2) {
-		case 1:	wolgan = "무"; break; case 2: wolgan = "기"; break; case 3: wolgan = "경"; break;
-		case 4: wolgan = "신"; break; case 5: wolgan = "임"; break; case 6: wolgan = "계"; break;
-		case 7:	wolgan = "갑"; break; case 8: wolgan = "을"; break; case 9: wolgan = "병"; break;
-		case 10: wolgan = "정"; break; case 11: wolgan = "무"; break; case 12: wolgan = "기"; break;}
+		case 1:	setWolgan("무"); break; case 2: setWolgan("기"); break; case 3: setWolgan("경"); break;
+		case 4: setWolgan("신"); break; case 5: setWolgan("임"); break; case 6: setWolgan("계"); break;
+		case 7:	setWolgan("갑"); break; case 8: setWolgan("을"); break; case 9: setWolgan("병"); break;
+		case 10: setWolgan("정"); break; case 11: setWolgan("무"); break; case 12: setWolgan("기"); break;}
 		}
 	else if (yungan.equals("병") || yungan.equals("신")) {
 		switch(chungan2) {
-		case 1: wolgan = "경"; break; case 2: wolgan = "신"; break; case 3: wolgan = "임"; break;
-		case 4: wolgan = "계"; break; case 5: wolgan = "갑"; break; case 6: wolgan = "을"; break;
-		case 7:	wolgan = "병"; break; case 8: wolgan = "정"; break; case 9: wolgan = "무"; break;
-		case 10: wolgan = "기"; break; case 11: wolgan = "경"; break; case 12: wolgan = "신"; break;}
+		case 1: setWolgan("경"); break; case 2: setWolgan("신"); break; case 3: setWolgan("임"); break;
+		case 4: setWolgan("계"); break; case 5: setWolgan("갑"); break; case 6: setWolgan("을"); break;
+		case 7:	setWolgan("병"); break; case 8: setWolgan("정"); break; case 9: setWolgan("무"); break;
+		case 10: setWolgan("기"); break; case 11: setWolgan("경"); break; case 12: setWolgan("신"); break;}
 		}
 	else if (yungan.equals("정") || yungan.equals("임")) {
 		switch(chungan2) {
-		case 1: wolgan = "임"; break; case 2: wolgan = "계"; break; case 3: wolgan = "갑"; break;
-		case 4: wolgan = "을"; break; case 5: wolgan = "병"; break; case 6: wolgan = "정"; break;
-		case 7:	wolgan = "무"; break; case 8: wolgan = "기"; break; case 9: wolgan = "경"; break;
-		case 10: wolgan = "신"; break; case 11: wolgan = "임"; break; case 12: wolgan = "계"; break;}
+		case 1: setWolgan("임"); break; case 2: setWolgan("계"); break; case 3: setWolgan("갑"); break;
+		case 4: setWolgan("을"); break; case 5: setWolgan("병"); break; case 6: setWolgan("정"); break;
+		case 7:	setWolgan("무"); break; case 8: setWolgan("기"); break; case 9: setWolgan("경"); break;
+		case 10: setWolgan("신"); break; case 11: setWolgan("임"); break; case 12: setWolgan("계"); break;}
 		}
 	else if (yungan.equals("무") || yungan.equals("계")) {
 		switch(chungan2) {
-		case 1: wolgan = "갑"; break; case 2: wolgan = "을"; break; case 3: wolgan = "병"; break;
-		case 4: wolgan = "정"; break; case 5: wolgan = "무"; break; case 6: wolgan = "기"; break;
-		case 7:	wolgan = "경"; break; case 8: wolgan = "신"; break; case 9: wolgan = "임"; break;
-		case 10: wolgan = "계"; break; case 11: wolgan = "갑"; break; case 12: wolgan = "을"; break;}	
+		case 1: setWolgan("갑"); break; case 2: setWolgan("을"); break; case 3: setWolgan("병"); break;
+		case 4: setWolgan("정"); break; case 5: setWolgan("무"); break; case 6: setWolgan("기"); break;
+		case 7:	setWolgan("경"); break; case 8: setWolgan("신"); break; case 9: setWolgan("임"); break;
+		case 10: setWolgan("계"); break; case 11: setWolgan("갑"); break; case 12: setWolgan("을"); break;}	
 		}
 	
 	//	연지
 	int jiji = Integer.parseInt(lunYear)%12;
-	yunji = "";
 	switch (jiji) {
-	case 4:	yunji="자"; break;	case 5: yunji="축"; break;	case 6: yunji="인"; break;	case 7: yunji="묘"; break;
-	case 8: yunji="진"; break;	case 9: yunji="사"; break;	case 10: yunji="오"; break;	case 11: yunji="미"; break;
-	case 0: yunji="신"; break;	case 1: yunji="유"; break;	case 2: yunji="술"; break;	case 3: yunji="해"; break;
+	case 4:	setYunji("자"); break;	case 5: setYunji("축"); break;	case 6: setYunji("인"); break;	case 7: setYunji("묘"); break;
+	case 8: setYunji("진"); break;	case 9: setYunji("사"); break;	case 10: setYunji("오"); break;	case 11: setYunji("미"); break;
+	case 0: setYunji("신"); break;	case 1: setYunji("유"); break;	case 2: setYunji("술"); break;	case 3: setYunji("해"); break;
 	}	
 	
     //	월지
 	int wol = Integer.parseInt(lunMonth);
-	wolji = ""; 
 	switch(wol) {
-	case 11: wolji="자"; break; case 12: wolji="축"; break; case 1: wolji="인"; break;
-	case 2: wolji="묘"; break; case 3: wolji="진"; break; case 4: wolji="사"; break;
-	case 5: wolji="오"; break; case 6: wolji="미"; break; case 7: wolji="신"; break;
-	case 8: wolji="유"; break; case 9: wolji="술"; break; case 10: wolji="해"; break;
+	case 11: setWolji("자"); break; case 12: setWolji("축"); break; case 1: setWolji("인"); break;
+	case 2: setWolji("묘"); break; case 3: setWolji("진"); break; case 4: setWolji("사"); break;
+	case 5: setWolji("오"); break; case 6: setWolji("미"); break; case 7: setWolji("신"); break;
+	case 8: setWolji("유"); break; case 9: setWolji("술"); break; case 10: setWolji("해"); break;
 	}
 	//	API적시된 대로 일간-일지 도출
 	StringBuilder sb = new StringBuilder(lunDay);
@@ -182,21 +184,59 @@ public class GapJa {
 		else if (si>=17 && si<19) {sigan="신";}	else if (si>=19 && si<21) {sigan="임";}	else if (si>=21 && si<23) {sigan="계";}
 		}
 	
+	String siganElement = HeavenlyStemsManager.getElementByStem(sigan);
+	String ilganElement = HeavenlyStemsManager.getElementByStem(ilgan);
+	String wolganElement = HeavenlyStemsManager.getElementByStem(wolgan);
+	String yunganElement = HeavenlyStemsManager.getElementByStem(yungan);
+	
 	String sijiElement = ZodiacManager.getElementByZodiac(siji);
 	String iljiElement = ZodiacManager.getElementByZodiac(ilji);
 	String woljiElement = ZodiacManager.getElementByZodiac(wolji);
 	String yunjiElement = ZodiacManager.getElementByZodiac(yunji);
 	
-	
 	System.out.printf("시주\t일주\t월주\t연주%n"
-					+ "%s \t %s \t %s \t %s%n"
+					+ "%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)%n"
 					+ "%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)",
-					sigan,ilgan, wolgan,yungan,
+					sigan,siganElement,ilgan,ilganElement,wolgan,wolganElement,yungan,yunganElement,
 					siji,sijiElement,ilji,iljiElement,wolji,woljiElement,yunji,yunjiElement);
 	
-	FiveElement.JiElement(siji, ilji, wolji, yunji);
-	
+	EightKeyMap.put(sigan, new GapJa());
+	EightKeyMap.put(ilgan, new GapJa());
+	EightKeyMap.put(wolgan, new GapJa());
+	EightKeyMap.put(yungan, new GapJa());
+	EightKeyMap.put(siji, new GapJa());
+	EightKeyMap.put(ilji, new GapJa());
+	EightKeyMap.put(wolji, new GapJa());
+	EightKeyMap.put(yunji, new GapJa());
 	
 	}
 	
+    public static String getSiganByKey(String name) {
+        EightKeyMap.get(name);
+		return EightKeyMap.containsKey(name) ? 
+        		GapJa.sigan : "해당하는 십간이 없습니다.";
+    }
+	
+    public static String getIlganByKey(String name) {
+        EightKeyMap.get(name);
+		return EightKeyMap.containsKey(name) ? 
+        		GapJa.ilgan : "해당하는 십간이 없습니다.";
+    }
+    
+    public static String getWolganByKey(String name) {
+        EightKeyMap.get(name);
+		return EightKeyMap.containsKey(name) ? 
+        		GapJa.wolgan : "해당하는 십간이 없습니다.";
+    }
+    
+    public static String getYunganByKey(String name) {
+        EightKeyMap.get(name);
+		return EightKeyMap.containsKey(name) ? 
+        		GapJa.yungan : "해당하는 십간이 없습니다.";
+    }
+    
+    
+    
+    
 }
+
