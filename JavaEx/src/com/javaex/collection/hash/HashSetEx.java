@@ -84,7 +84,6 @@ public class HashSetEx {
 		System.out.println(s2.equals(s3));
 		System.out.println(s3.equals(s4));
 		
-		
 	}
 	
 	private static void setOperation() {

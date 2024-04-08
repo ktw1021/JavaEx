@@ -2,51 +2,51 @@ package furtune;
 
 public class GapJa {
 	String ilju;
-	static String ilgan;
-	static String ilji;
+	public static String ilgan;
+	public static String ilji;
 	
-	static String yungan;
-	static String yunji;
-	static String wolgan;
-	static String wolji;
+	public static String yungan;
+	public static String yunji;
+	public static String wolgan;
+	public static String wolji;
 	static String sigan;
 	static String siji;
 	
-	public String getYungan() {
+	public static String getYungan() {
 		return yungan;
 	}
-	public void setYungan(String yungan) {
-		this.yungan = yungan;
+	public static void setYungan(String newYungan) {
+		yungan = newYungan;
 	}
 	public String getYunji() {
 		return yunji;
 	}
-	public void setYunji(String yunji) {
-		this.yunji = yunji;
+	public static void setYunji(String newYunji) {
+		yunji = newYunji;
 	}
 	public String getSiji() {
 		return siji;
 	}
-	public void setSiji(String siji) {
-		this.siji = siji;
+	public static void setSiji(String newSiji) {
+		siji = newSiji;
 	}
 	public String getWolgan() {
 		return wolgan;
 	}
-	public void setWolgan(String wolgan) {
-		this.wolgan = wolgan;
+	public static void setWolgan(String newWolgan) {
+		wolgan = newWolgan;
 	}
 	public String getWolji() {
 		return wolji;
 	}
-	public void setWolji(String wolji) {
-		this.wolji = wolji;
+	public static void setWolji(String newWolji) {
+		wolji = newWolji;
 	}
 	public String getSigan() {
 		return sigan;
 	}
-	public void setSigan(String sigan) {
-		this.sigan = sigan;
+	public static void setSigan(String newSigan) {
+		sigan = newSigan;
 	}
 	
     public String getIlju() {
@@ -55,30 +55,22 @@ public class GapJa {
 	public void setIlju(String ilju) {
 		this.ilju = ilju;
 	}
-	public String getIlgan() {
+	public static String getIlgan() {
 		return ilgan;
 	}
-	public void setIlgan(String ilgan) {
-		this.ilgan = ilgan;
+	public static void setIlgan(String newIlgan) {
+		ilgan = newIlgan;
 	}
 	public String getIlji() {
 		return ilji;
 	}
-	public void setIlji(String ilji) {
-		this.ilji = ilji;
+	public static void setIlji(String newIlji) {
+		ilji = newIlji;
 	}
 	
-	public GapJa() {
-		
-	}
-	
-	
-	
-	public GapJa(String ilju) {
-		super();
-		this.ilju = ilju;
-	}
-	public static void transformer(String lunYear, String lunMonth, String lunDay, int hour) {
+
+
+	public static void transformer(String lunYear, String lunMonth, String lunDay,int inputHour) {
 
     //	연간
     int chungan1 = Integer.parseInt(lunYear)%10;
@@ -151,7 +143,7 @@ public class GapJa {
 	ilji = String.valueOf(sb.charAt(1));
 	
 	//	시지
-	int si=10;
+	int si=inputHour;
 	siji = "";
 	if (si>=23 || si<1) {siji="자";}	else if (si>=1 && si<3) {siji="축";}	else if (si>=3 && si<5) {siji="인";}
 	else if (si>=5 && si<7) {siji="묘";}	else if (si>=7 && si<9) {siji="진";}	else if (si>=9 && si<11) {siji="사";}
@@ -190,11 +182,21 @@ public class GapJa {
 		else if (si>=17 && si<19) {sigan="신";}	else if (si>=19 && si<21) {sigan="임";}	else if (si>=21 && si<23) {sigan="계";}
 		}
 	
+	String sijiElement = ZodiacManager.getElementByZodiac(siji);
+	String iljiElement = ZodiacManager.getElementByZodiac(ilji);
+	String woljiElement = ZodiacManager.getElementByZodiac(wolji);
+	String yunjiElement = ZodiacManager.getElementByZodiac(yunji);
+	
+	
 	System.out.printf("시주\t일주\t월주\t연주%n"
 					+ "%s \t %s \t %s \t %s%n"
-					+ "%s \t %s \t %s \t %s",
+					+ "%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)",
 					sigan,ilgan, wolgan,yungan,
-					siji,ilji,wolji,yunji);
+					siji,sijiElement,ilji,iljiElement,wolji,woljiElement,yunji,yunjiElement);
+	
+	FiveElement.JiElement(siji, ilji, wolji, yunji);
+	
+	
 	}
 	
 }

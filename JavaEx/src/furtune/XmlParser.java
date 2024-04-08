@@ -12,7 +12,7 @@ import java.io.StringReader;
 public class XmlParser {
 	
 	
-	public void parseXmlString(String xmlStr) throws Exception {
+	public void parseXmlString(String xmlStr, int inputHour) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         InputSource is = new InputSource(new StringReader(xmlStr));
@@ -24,12 +24,11 @@ public class XmlParser {
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element element = (Element) node;
                 
-                
-                
                 String lunYear= element.getElementsByTagName("lunYear").item(0).getTextContent();
                 String lunMonth	= element.getElementsByTagName("lunMonth").item(0).getTextContent();
                 String lunDay	= element.getElementsByTagName("lunDay").item(0).getTextContent();
                 String iljin	= element.getElementsByTagName("lunIljin").item(0).getTextContent();
+                
                 
                 System.out.printf("음력 %s년 %s월 %s일 %s%n",lunYear,lunMonth,lunDay,iljin);
                 
@@ -37,8 +36,9 @@ public class XmlParser {
                 System.out.println("윤달 여부: " + element.getElementsByTagName("lunLeapmonth").item(0).getTextContent());
                 System.out.println("-------------------------------------------------");
                 
-            	GapJa.transformer(lunYear,lunMonth,iljin,11);
+            	GapJa.transformer(lunYear,lunMonth,iljin,inputHour);
                 
+            	
             }
         }
     }

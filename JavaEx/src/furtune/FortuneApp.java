@@ -25,12 +25,13 @@ public class FortuneApp {
             
             // 결과를 XmlParser 객체에 전달하여 파싱하고 출력합니다.
             XmlParser parser = new XmlParser();
-            parser.parseXmlString(result); // parseXmlString 호출.
+            parser.parseXmlString(result, gapja.inputHour); // parseXmlString 호출.
         } catch (Exception e) {
             e.printStackTrace();
         }
         
+        scanner.close();
     }
 		
-	
+
 }
