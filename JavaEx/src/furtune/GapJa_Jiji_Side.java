@@ -1,10 +1,10 @@
 package furtune;
 
-public class JijiSide {
+public class GapJa_Jiji_Side {
 
 	private GapJa gapJa;
 	
-	public JijiSide(GapJa gapJa) {
+	public GapJa_Jiji_Side(GapJa gapJa) {
 		this.gapJa = gapJa;
 	}
 	

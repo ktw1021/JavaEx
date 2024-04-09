@@ -7,7 +7,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
 
-public class ApiCaller {
+public class Api_Caller {
     public String callApi(String year, String month, String day) throws IOException {
     	
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/B090041/openapi/service/LrsrCldInfoService/getLunCalInfo");

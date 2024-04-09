@@ -1,6 +1,6 @@
 package furtune;
 
-public class InputDate extends XmlParser {
+public class InputDate extends Api_XmlParser {
 	
 	String inputYear;
 	String inputMonth;

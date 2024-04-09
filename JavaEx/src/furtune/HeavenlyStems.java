@@ -23,7 +23,7 @@ public enum HeavenlyStems {
         this.direction = direction;
         this.color = color;
     }
-
+    
     public String getYinYang() {
         return yinYang;
     }
@@ -39,4 +39,5 @@ public enum HeavenlyStems {
     public String getColor() {
         return color;
     }
+    
 }

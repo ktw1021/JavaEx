@@ -1,10 +1,10 @@
 package furtune;
 //천간병존
-public class ChunganSide {
+public class GapJa_Chungan_Side {
 
 	private GapJa gapJa;
 	
-	public ChunganSide(GapJa gapJa) {
+	public GapJa_Chungan_Side(GapJa gapJa) {
 		this.gapJa=gapJa;
 	}
 	
@@ -44,7 +44,7 @@ public class ChunganSide {
 				}
 			}
 		
-		System.out.println(coexist);
+		System.out.print(coexist+"\t");
 		
 		
 		}

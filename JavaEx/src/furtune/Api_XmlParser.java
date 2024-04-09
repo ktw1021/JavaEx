@@ -9,7 +9,7 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 import java.io.StringReader;
 
-public class XmlParser {
+public class Api_XmlParser {
 	
 	
 	public void parseXmlString(String xmlStr, int inputHour) throws Exception {

@@ -193,8 +193,8 @@ public class GapJa {
 					sigan,siganElement,ilgan,ilganElement,wolgan,wolganElement,yungan,yunganElement,
 					siji,sijiElement,ilji,iljiElement,wolji,woljiElement,yunji,yunjiElement);
 	
-	ChunganSide.sideChungan();
-	JijiSide.sideJiji();
+	
+
     
 }
 }
