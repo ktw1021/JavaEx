@@ -12,7 +12,7 @@ public class ByteStreamEx {
 	public static void main(String[] args) throws IOException {
 		
 		//	입력 소스
-		byte[] inSrc = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+		byte[] inSrc = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 		//	출력 타겟
 		byte[] outSrc = null;
 		
@@ -20,7 +20,7 @@ public class ByteStreamEx {
 		
 		//	입력 스트림과 출력 스트림 열기
 		
-		
+		/*
 		InputStream input = new ByteArrayInputStream(inSrc);
 		OutputStream output = new ByteArrayOutputStream();
 		
@@ -49,7 +49,29 @@ public class ByteStreamEx {
 				
 			}
 			
+		}*/
+		/*
+		 * AutoCloseable을 활용한 예외 처리 : try - with - resources
+		 */
+		try (	//	자원 해제를 필요로 하는 객체를 초기화
+				InputStream bis = new ByteArrayInputStream(inSrc);
+				OutputStream bos = new ByteArrayOutputStream();
+				) {
+			int data = 0;	//	입력 스트림으로부터 입력된 데이터 저장할 변수
+			
+			while ((data = bis.read()) != -1) {
+				System.out.println("Read data: "+ data);
+				bos.write(data);
+			}
+			
+			outSrc = ((ByteArrayOutputStream)bos).toByteArray();
+			System.out.println("최종 결과: "+Arrays.toString(outSrc));
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+		
 	}
 	
 

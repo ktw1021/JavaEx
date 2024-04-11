@@ -187,8 +187,9 @@ public class GapJa {
 	String woljiElement = (Zodiacs.valueOf(wolji)).getElement();
 	String yunjiElement = (Zodiacs.valueOf(yunji)).getElement();
 	
-	System.out.printf("*시주*\t*일주*\t*월주*\t*연주*%n"
-					+ "%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)%n"
+	System.out.printf("*시주*\t*일주*\t*월주*\t*연주*%n");
+	GapJa_YukChin.YukChin_Chungan();
+	System.out.printf("%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)%n"
 					+ "%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)%n",
 					sigan,siganElement,ilgan,ilganElement,wolgan,wolganElement,yungan,yunganElement,
 					siji,sijiElement,ilji,iljiElement,wolji,woljiElement,yunji,yunjiElement);

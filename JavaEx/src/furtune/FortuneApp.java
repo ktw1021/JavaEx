@@ -32,20 +32,24 @@ public class FortuneApp {
             e.printStackTrace();
         }
 
+    
     	GapJa_Chungan_YinYang.Chungan_YinYang();
+    	TwelfthSinSal.Sal();
+    	
     	GapJa_Chungan_Side.sideChungan();
     	GapJa_Jiji_Side.sideJiji();
     	
+    	
     	// ApiExplorer 인스턴스 생성 및 API 호출
-        ApiExplorer apiExplorer = new ApiExplorer();
-        String xmlData = apiExplorer.Api_Explore(gapja.inputYear, gapja.inputMonth);
+//        ApiExplorer apiExplorer = new ApiExplorer();
+//        String xmlData = apiExplorer.Api_Explore(gapja.inputYear, gapja.inputMonth);
 
         // XML 데이터 파싱 및 결과 처리
-        try {
-            Api_SolarTerms_XmlParser.parseXml(xmlData);
-        } catch (Exception e) {
-            System.err.println("XML 파싱 중 오류가 발생했습니다: " + e.getMessage());
-        } 
+//        try {
+//            Api_SolarTerms_XmlParser.parseXml(xmlData);
+//        } catch (Exception e) {
+//            System.err.println("XML 파싱 중 오류가 발생했습니다: " + e.getMessage());
+//        } 
         scanner.close();
     }
 		

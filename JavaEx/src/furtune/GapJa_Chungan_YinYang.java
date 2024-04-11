@@ -37,7 +37,7 @@ public class GapJa_Chungan_YinYang {
 		
 
 		// 추출된 천간지지의 음양오행을, 육친 클래스에서 처리하여 반환
-		GapJa_YukChin.YukChin(yinYang_lst);
+		GapJa_YukChin.YukChin_jiji(yinYang_lst);
 		
 
 		int yin = 0;
@@ -51,7 +51,7 @@ public class GapJa_Chungan_YinYang {
 				yin+=1;
 			}
 		}
-		System.out.println("양: "+yang+", 음: "+yin);
-		System.out.println(yinYang_lst);
+//		System.out.println("양: "+yang+", 음: "+yin);
+//		System.out.println(yinYang_lst);
 	}
 }
