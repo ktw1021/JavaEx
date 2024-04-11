@@ -106,10 +106,10 @@ public class HashTableEx {
 		System.out.println();
 		
 		
-		Hashtable ht = new Hashtable();
+		Hashtable<String, Vector<String>> ht = new Hashtable<String, Vector<String>>();
 		
-		Vector v1 = new Vector();
-		Vector v2 = new Vector();
+		Vector<String> v1 = new Vector<String>();
+		Vector<String> v2 = new Vector<String>();
 		
 		v1.add("Taxi"); v1.add("Bus"); v1.add("Truck");
 		v2.add("Man"); v2.add("Woman"); v2.add("Child");
