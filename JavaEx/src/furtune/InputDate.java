@@ -1,6 +1,6 @@
 package furtune;
 
-public class InputDate extends Api_XmlParser {
+public class InputDate extends Api_Lunar_XmlParser {
 	
 	String inputYear;
 	String inputMonth;
