@@ -1,6 +1,5 @@
 package furtune;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
@@ -71,6 +70,8 @@ public class TwelfthSinSal {
 				}
 			}
 		}
+			
+			
 			System.out.print(sal.get(0) + "\t" + sal.get(1) + "\t" + sal.get(2) + "\t" + sal.get(3));
 			System.out.println();
 			System.out.println("올해 신살: *" + sal.get(4)+"*");

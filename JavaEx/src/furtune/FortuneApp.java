@@ -5,6 +5,12 @@ import java.util.Scanner;
 
 public class FortuneApp {
 	
+	private GapJa_YukChin yukchin;
+	
+	public FortuneApp(GapJa_YukChin yukchin) {
+		this.yukchin=yukchin;
+	}
+	
     public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         
@@ -35,10 +41,10 @@ public class FortuneApp {
     
     	GapJa_Chungan_YinYang.Chungan_YinYang();
     	TwelfthSinSal.Sal();
-    	
+    	SipSung_Count.Count_SipSung();
     	GapJa_Chungan_Side.sideChungan();
     	GapJa_Jiji_Side.sideJiji();
-    	
+    	Twelve_Branches.Branches();
     	
     	// ApiExplorer 인스턴스 생성 및 API 호출
 //        ApiExplorer apiExplorer = new ApiExplorer();
@@ -52,6 +58,7 @@ public class FortuneApp {
 //        } 
         scanner.close();
     }
+
 		
 
 }
