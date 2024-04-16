@@ -18,14 +18,8 @@ public class Another_Sal {
 	public static ArrayList<String> getYunju_sal() {return yunju_sal;}
 	public static void setYunju_sal(ArrayList<String> yunju_sal) {Another_Sal.yunju_sal = yunju_sal;}
 	
-	public static void getSinsal() {
-		System.out.println(getIlju_sal());
-		System.out.println(getSiju_sal());
-		System.out.println(getWolju_sal());
-		System.out.println(getYunju_sal());
-	}
-	
-	public static void Ilgan_Sinsal(ArrayList <String> arr) {
+
+	public static void Another_SinSal(ArrayList <String> arr) {
 		
 	
 		//	일간 대 지지 신살 - *시주 위치* 
@@ -372,14 +366,8 @@ public class Another_Sal {
 				else if (arr.get(7).equals("묘")) {yunju_sal.add("문창");yunju_sal.add("천을귀인");}
 				else if (arr.get(7).equals("신")) {yunju_sal.add("학당");}
 				}
-		setSiju_sal(siju_sal);
-		setIlju_sal(ilju_sal);
-		setWolju_sal(wolju_sal);
-		setYunju_sal(yunju_sal);
-	}
+			
 	
-	public static void wolji_Sinsal(ArrayList <String> arr) {
-		
 			//월지-시간
 			if (arr.get(6).equals("자")) {
 				if (arr.get(0).equals("사")) {siju_sal.add("천덕");}
@@ -877,14 +865,8 @@ public class Another_Sal {
 				else if (arr.get(7).equals("술")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("진") || arr.get(7).equals("축")) {yunju_sal.add("급각살");}
 			}
-			setSiju_sal(siju_sal);
-			setIlju_sal(ilju_sal);
-			setWolju_sal(wolju_sal);
-			setYunju_sal(yunju_sal);
-		}
-	
-	public static void ilji_Sinsal(ArrayList <String> arr) {
-		
+			
+			
 		// 일지-시간
 		if (arr.get(5).equals("자")) {
 			if (arr.get(0).equals("유")) {siju_sal.add("귀문관살");}
@@ -1303,6 +1285,12 @@ public class Another_Sal {
 				setIlju_sal(ilju_sal);
 				setWolju_sal(wolju_sal);
 				setYunju_sal(yunju_sal);
+				
+				System.out.print(getSiju_sal());
+				System.out.print(getIlju_sal());
+				System.out.print(getWolju_sal());
+				System.out.print(getYunju_sal());
+				
 	}
 }
 		

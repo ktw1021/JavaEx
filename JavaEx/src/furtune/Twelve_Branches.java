@@ -141,6 +141,6 @@ public class Twelve_Branches {
 			}
 		}
 		System.out.println(result);
-		Another_Sal.getSinsal();
+		Another_Sal.Another_SinSal(arr);
 	}
 }
