@@ -443,73 +443,52 @@ public class Another_Sal {
 			//월지신살
 			//월지-시지
 			if (arr.get(6).equals("자")) {
-				if (arr.get(4).equals("사")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("임")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("술")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("술")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("축") || arr.get(4).equals("진")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("축")) {
-				if (arr.get(4).equals("경")) {siju_sal.add("천덕");siju_sal.add("월덕");}
-				else if (arr.get(4).equals("자")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("자")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("축") || arr.get(4).equals("진")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("인")) {
-					if (arr.get(4).equals("정")) {siju_sal.add("천덕");}
-					else if (arr.get(4).equals("병")) {siju_sal.add("월덕");}
-					else if (arr.get(4).equals("축")) {siju_sal.add("천의성");}
-					else if (arr.get(4).equals("해") || arr.get(4).equals("자")) {siju_sal.add("급각살");}
+				if (arr.get(4).equals("축")) {siju_sal.add("천의성");}
+				else if (arr.get(4).equals("해") || arr.get(4).equals("자")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("묘")) {
-				if (arr.get(4).equals("신")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("갑")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("인")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("인")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("해") || arr.get(4).equals("자")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("진")) {
-				if (arr.get(4).equals("미")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("임")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("묘")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("묘")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("해") || arr.get(4).equals("자")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("사")) {
-				if (arr.get(4).equals("신")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("경")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("진")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("진")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("묘") || arr.get(4).equals("미")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("오")) {
-				if (arr.get(4).equals("해")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("병")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("사")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("사")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("묘") || arr.get(4).equals("미")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("미")) {
-				if (arr.get(4).equals("갑")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("갑")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("오")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("오")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("묘") || arr.get(4).equals("미")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("신")) {
-				if (arr.get(4).equals("계")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("임")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("미")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("미")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("인") || arr.get(4).equals("술")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("유")) {
-				if (arr.get(4).equals("인")) {siju_sal.add("천덕"); siju_sal.add("급각살");}
-				else if (arr.get(4).equals("경")) {siju_sal.add("월덕");}
+				if (arr.get(4).equals("인")) {siju_sal.add("급각살");}
 				else if (arr.get(4).equals("신")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("술")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("술")) {
-				if (arr.get(4).equals("병")) {siju_sal.add("천덕");siju_sal.add("월덕");}
-				else if (arr.get(4).equals("유")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("유")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("인") || arr.get(4).equals("술")) {siju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("해")) {
-				if (arr.get(4).equals("을")) {siju_sal.add("천덕");}
-				else if (arr.get(4).equals("갑")) {siju_sal.add("월덕");}
-				else if (arr.get(4).equals("술")) {siju_sal.add("천의성");}
+				if (arr.get(4).equals("술")) {siju_sal.add("천의성");}
 				else if (arr.get(4).equals("진") || arr.get(4).equals("축")) {siju_sal.add("급각살");}
 			}
 			//월지신살
@@ -517,143 +496,98 @@ public class Another_Sal {
 			if (arr.get(6).equals("자")) {
 				if (arr.get(2).equals("사")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("임")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("술")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("축") || arr.get(2).equals("진")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("축")) {
 				if (arr.get(2).equals("경")) {ilju_sal.add("천덕");ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("자")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("축") || arr.get(2).equals("진")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("인")) {
 					if (arr.get(2).equals("정")) {ilju_sal.add("천덕");}
 					else if (arr.get(2).equals("병")) {ilju_sal.add("월덕");}
-					else if (arr.get(2).equals("축")) {ilju_sal.add("천의성");}
-					else if (arr.get(2).equals("해") || arr.get(2).equals("자")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("묘")) {
 				if (arr.get(2).equals("신")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("갑")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("인")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("해") || arr.get(2).equals("자")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("진")) {
 				if (arr.get(2).equals("미")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("임")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("묘")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("해") || arr.get(2).equals("자")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("사")) {
 				if (arr.get(2).equals("신")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("경")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("진")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("묘") || arr.get(2).equals("미")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("오")) {
 				if (arr.get(2).equals("해")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("병")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("사")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("묘") || arr.get(2).equals("미")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("미")) {
 				if (arr.get(2).equals("갑")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("갑")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("오")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("묘") || arr.get(2).equals("미")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("신")) {
 				if (arr.get(2).equals("계")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("임")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("미")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("인") || arr.get(2).equals("술")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("유")) {
-				if (arr.get(2).equals("인")) {ilju_sal.add("천덕"); ilju_sal.add("급각살");}
-				else if (arr.get(2).equals("경")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("신")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("술")) {ilju_sal.add("급각살");}
+				if (arr.get(2).equals("경")) {ilju_sal.add("월덕");}
 			}
 			else if (arr.get(6).equals("술")) {
 				if (arr.get(2).equals("병")) {ilju_sal.add("천덕");ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("유")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("인") || arr.get(2).equals("술")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("해")) {
 				if (arr.get(2).equals("을")) {ilju_sal.add("천덕");}
 				else if (arr.get(2).equals("갑")) {ilju_sal.add("월덕");}
-				else if (arr.get(2).equals("술")) {ilju_sal.add("천의성");}
-				else if (arr.get(2).equals("진") || arr.get(2).equals("축")) {ilju_sal.add("급각살");}
 			}
 			//월지신살
 			//월지-일지
 			if (arr.get(6).equals("자")) {
 				if (arr.get(5).equals("사")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("임")) {ilju_sal.add("월덕");}
 				else if (arr.get(5).equals("술")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("축") || arr.get(5).equals("진")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("축")) {
-				if (arr.get(5).equals("경")) {ilju_sal.add("천덕");ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("자")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("자")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("축") || arr.get(5).equals("진")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("인")) {
-					if (arr.get(5).equals("정")) {ilju_sal.add("천덕");}
-					else if (arr.get(5).equals("병")) {ilju_sal.add("월덕");}
-					else if (arr.get(5).equals("축")) {ilju_sal.add("천의성");}
+					if (arr.get(5).equals("축")) {ilju_sal.add("천의성");}
 					else if (arr.get(5).equals("해") || arr.get(5).equals("자")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("묘")) {
-				if (arr.get(5).equals("신")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("갑")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("인")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("인")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("해") || arr.get(5).equals("자")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("진")) {
-				if (arr.get(5).equals("미")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("임")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("묘")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("묘")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("해") || arr.get(5).equals("자")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("사")) {
-				if (arr.get(5).equals("신")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("경")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("진")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("진")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("묘") || arr.get(5).equals("미")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("오")) {
-				if (arr.get(5).equals("해")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("병")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("사")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("사")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("묘") || arr.get(5).equals("미")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("미")) {
-				if (arr.get(5).equals("갑")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("갑")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("오")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("오")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("묘") || arr.get(5).equals("미")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("신")) {
-				if (arr.get(5).equals("계")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("임")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("미")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("미")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("인") || arr.get(5).equals("술")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("유")) {
 				if (arr.get(5).equals("인")) {ilju_sal.add("천덕"); ilju_sal.add("급각살");}
-				else if (arr.get(5).equals("경")) {ilju_sal.add("월덕");}
 				else if (arr.get(5).equals("신")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("술")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("술")) {
-				if (arr.get(5).equals("병")) {ilju_sal.add("천덕");ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("유")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("유")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("인") || arr.get(5).equals("술")) {ilju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("해")) {
-				if (arr.get(5).equals("을")) {ilju_sal.add("천덕");}
-				else if (arr.get(5).equals("갑")) {ilju_sal.add("월덕");}
-				else if (arr.get(5).equals("술")) {ilju_sal.add("천의성");}
+				if (arr.get(5).equals("술")) {ilju_sal.add("천의성");}
 				else if (arr.get(5).equals("진") || arr.get(5).equals("축")) {ilju_sal.add("급각살");}
 			}
 			//월지신살
@@ -661,275 +595,209 @@ public class Another_Sal {
 			if (arr.get(6).equals("자")) {
 				if (arr.get(2).equals("사")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("임")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("술")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("축") || arr.get(2).equals("진")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("축")) {
 				if (arr.get(2).equals("경")) {wolju_sal.add("천덕");wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("자")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("축") || arr.get(2).equals("진")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("인")) {
 					if (arr.get(2).equals("정")) {wolju_sal.add("천덕");}
 					else if (arr.get(2).equals("병")) {wolju_sal.add("월덕");}
-					else if (arr.get(2).equals("축")) {wolju_sal.add("천의성");}
-					else if (arr.get(2).equals("해") || arr.get(2).equals("자")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("묘")) {
 				if (arr.get(2).equals("신")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("갑")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("인")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("해") || arr.get(2).equals("자")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("진")) {
 				if (arr.get(2).equals("미")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("임")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("묘")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("해") || arr.get(2).equals("자")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("사")) {
 				if (arr.get(2).equals("신")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("경")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("진")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("묘") || arr.get(2).equals("미")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("오")) {
 				if (arr.get(2).equals("해")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("병")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("사")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("묘") || arr.get(2).equals("미")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("미")) {
 				if (arr.get(2).equals("갑")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("갑")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("오")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("묘") || arr.get(2).equals("미")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("신")) {
 				if (arr.get(2).equals("계")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("임")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("미")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("인") || arr.get(2).equals("술")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("유")) {
 				if (arr.get(2).equals("인")) {wolju_sal.add("천덕"); wolju_sal.add("급각살");}
 				else if (arr.get(2).equals("경")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("신")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("술")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("술")) {
 				if (arr.get(2).equals("병")) {wolju_sal.add("천덕");wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("유")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("인") || arr.get(2).equals("술")) {wolju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("해")) {
 				if (arr.get(2).equals("을")) {wolju_sal.add("천덕");}
 				else if (arr.get(2).equals("갑")) {wolju_sal.add("월덕");}
-				else if (arr.get(2).equals("술")) {wolju_sal.add("천의성");}
-				else if (arr.get(2).equals("진") || arr.get(2).equals("축")) {wolju_sal.add("급각살");}
 			}
 			//월지신살
 			//월지-연간
 			if (arr.get(6).equals("자")) {
 				if (arr.get(3).equals("사")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("임")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("술")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("축") || arr.get(3).equals("진")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("축")) {
 				if (arr.get(3).equals("경")) {yunju_sal.add("천덕");yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("자")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("축") || arr.get(3).equals("진")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("인")) {
 					if (arr.get(3).equals("정")) {yunju_sal.add("천덕");}
 					else if (arr.get(3).equals("병")) {yunju_sal.add("월덕");}
-					else if (arr.get(3).equals("축")) {yunju_sal.add("천의성");}
-					else if (arr.get(3).equals("해") || arr.get(3).equals("자")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("묘")) {
 				if (arr.get(3).equals("신")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("갑")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("인")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("해") || arr.get(3).equals("자")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("진")) {
 				if (arr.get(3).equals("미")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("임")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("묘")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("해") || arr.get(3).equals("자")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("사")) {
 				if (arr.get(3).equals("신")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("경")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("진")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("묘") || arr.get(3).equals("미")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("오")) {
 				if (arr.get(3).equals("해")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("병")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("사")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("묘") || arr.get(3).equals("미")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("미")) {
 				if (arr.get(3).equals("갑")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("갑")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("오")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("묘") || arr.get(3).equals("미")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("신")) {
 				if (arr.get(3).equals("계")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("임")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("미")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("인") || arr.get(3).equals("술")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("유")) {
 				if (arr.get(3).equals("인")) {yunju_sal.add("천덕"); yunju_sal.add("급각살");}
 				else if (arr.get(3).equals("경")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("신")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("술")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("술")) {
 				if (arr.get(3).equals("병")) {yunju_sal.add("천덕");yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("유")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("인") || arr.get(3).equals("술")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("해")) {
 				if (arr.get(3).equals("을")) {yunju_sal.add("천덕");}
 				else if (arr.get(3).equals("갑")) {yunju_sal.add("월덕");}
-				else if (arr.get(3).equals("술")) {yunju_sal.add("천의성");}
-				else if (arr.get(3).equals("진") || arr.get(3).equals("축")) {yunju_sal.add("급각살");}
 			}
 			//월지신살
 			//월지-연지
 			if (arr.get(6).equals("자")) {
 				if (arr.get(7).equals("사")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("임")) {yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("술")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("술")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("축") || arr.get(7).equals("진")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("축")) {
-				if (arr.get(7).equals("경")) {yunju_sal.add("천덕");yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("자")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("자")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("축") || arr.get(7).equals("진")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("인")) {
-					if (arr.get(7).equals("정")) {yunju_sal.add("천덕");}
-					else if (arr.get(7).equals("병")) {yunju_sal.add("월덕");}
-					else if (arr.get(7).equals("축")) {yunju_sal.add("천의성");}
+					if (arr.get(7).equals("축")) {yunju_sal.add("천의성");}
 					else if (arr.get(7).equals("해") || arr.get(7).equals("자")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("묘")) {
 				if (arr.get(7).equals("신")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("갑")) {yunju_sal.add("월덕");}
 				else if (arr.get(7).equals("인")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("해") || arr.get(7).equals("자")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("진")) {
-				if (arr.get(7).equals("미")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("임")) {yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("묘")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("묘")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("해") || arr.get(7).equals("자")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("사")) {
-				if (arr.get(7).equals("신")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("경")) {yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("진")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("진")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("묘") || arr.get(7).equals("미")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("오")) {
 				if (arr.get(7).equals("해")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("병")) {yunju_sal.add("월덕");}
 				else if (arr.get(7).equals("사")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("묘") || arr.get(7).equals("미")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("미")) {
-				if (arr.get(7).equals("갑")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("갑")) {yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("오")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("오")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("묘") || arr.get(7).equals("미")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("신")) {
-				if (arr.get(7).equals("계")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("임")) {yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("미")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("미")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("인") || arr.get(7).equals("술")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("유")) {
 				if (arr.get(7).equals("인")) {yunju_sal.add("천덕"); yunju_sal.add("급각살");}
-				else if (arr.get(7).equals("경")) {yunju_sal.add("월덕");}
 				else if (arr.get(7).equals("신")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("술")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("술")) {
-				if (arr.get(7).equals("병")) {yunju_sal.add("천덕");yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("유")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("유")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("인") || arr.get(7).equals("술")) {yunju_sal.add("급각살");}
 			}
 			else if (arr.get(6).equals("해")) {
-				if (arr.get(7).equals("을")) {yunju_sal.add("천덕");}
-				else if (arr.get(7).equals("갑")) {yunju_sal.add("월덕");}
-				else if (arr.get(7).equals("술")) {yunju_sal.add("천의성");}
+				if (arr.get(7).equals("술")) {yunju_sal.add("천의성");}
 				else if (arr.get(7).equals("진") || arr.get(7).equals("축")) {yunju_sal.add("급각살");}
 			}
 			
 			// 일지신살
 		// 일지-시간
 		if (arr.get(5).equals("자")) {
-			if (arr.get(0).equals("유")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("유")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("인")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("사")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("축")) {
-			if (arr.get(0).equals("오")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("오")) {siju_sal.add("귀문관살(일)");siju_sal.add("원진살");}
 			else if (arr.get(0).equals("묘")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("유")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("인")) {
-			if (arr.get(0).equals("미")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("미")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("진")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("축")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("묘")) {
-			if (arr.get(0).equals("신")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("신")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("사")) {siju_sal.add("격각살");siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("진")) {
-			if (arr.get(0).equals("해")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("해")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("오")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("유")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("사")) {
-			if (arr.get(0).equals("술")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("술")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("미")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("축")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("오")) {
-			if (arr.get(0).equals("축")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("축")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("신")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("사")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("미")) {
-			if (arr.get(0).equals("인")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("인")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("유")) {siju_sal.add("격각살");siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("신")) {
-			if (arr.get(0).equals("묘")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("묘")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("술")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("축")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("유")) {
-			if (arr.get(0).equals("자")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("자")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("해")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("사")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("술")) {
-			if (arr.get(0).equals("사")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("사")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("자")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("유")) {siju_sal.add("암금적살");}
 		}
 		else if (arr.get(5).equals("해")) {
-			if (arr.get(0).equals("진")) {siju_sal.add("귀문관살");}
+			if (arr.get(0).equals("진")) {siju_sal.add("귀문관살(일)");}
 			else if (arr.get(0).equals("축")) {siju_sal.add("격각살");}
 			else if (arr.get(0).equals("축")) {siju_sal.add("암금적살");}
 		}
@@ -937,360 +805,360 @@ public class Another_Sal {
 		// 일지신살
 		// 일지-시지
 				if (arr.get(5).equals("자")) {
-					if (arr.get(4).equals("유")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("유")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("인")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("사")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("축")) {
-					if (arr.get(4).equals("오")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("오")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("묘")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("유")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("인")) {
-					if (arr.get(4).equals("미")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("미")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("진")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("축")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("묘")) {
-					if (arr.get(4).equals("신")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("신")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("사")) {siju_sal.add("격각살");siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("진")) {
-					if (arr.get(4).equals("해")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("해")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("오")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("유")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("사")) {
-					if (arr.get(4).equals("술")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("술")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("미")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("축")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("오")) {
-					if (arr.get(4).equals("축")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("축")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("신")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("사")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("미")) {
-					if (arr.get(4).equals("인")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("인")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("유")) {siju_sal.add("격각살");siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("신")) {
-					if (arr.get(4).equals("묘")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("묘")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("술")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("축")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("유")) {
-					if (arr.get(4).equals("자")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("자")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("해")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("사")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("술")) {
-					if (arr.get(4).equals("사")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("사")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("자")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("유")) {siju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("해")) {
-					if (arr.get(4).equals("진")) {siju_sal.add("귀문관살");}
+					if (arr.get(4).equals("진")) {siju_sal.add("귀문관살(일)");}
 					else if (arr.get(4).equals("축")) {siju_sal.add("격각살");}
 					else if (arr.get(4).equals("축")) {siju_sal.add("암금적살");}
 				}
 				// 일지신살
 				// 일지-일간
 				if (arr.get(5).equals("자")) {
-					if (arr.get(2).equals("유")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("유")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("인")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("사")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("축")) {
-					if (arr.get(2).equals("오")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("오")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("묘")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("유")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("인")) {
-					if (arr.get(2).equals("미")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("미")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("진")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("묘")) {
-					if (arr.get(2).equals("신")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("신")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("사")) {ilju_sal.add("격각살");ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("진")) {
-					if (arr.get(2).equals("해")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("해")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("오")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("유")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("사")) {
-					if (arr.get(2).equals("술")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("술")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("미")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("오")) {
-					if (arr.get(2).equals("축")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("축")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("신")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("사")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("미")) {
-					if (arr.get(2).equals("인")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("인")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("유")) {ilju_sal.add("격각살");ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("신")) {
-					if (arr.get(2).equals("묘")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("묘")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("술")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("유")) {
-					if (arr.get(2).equals("자")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("자")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("해")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("사")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("술")) {
-					if (arr.get(2).equals("사")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("사")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("자")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("유")) {ilju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("해")) {
-					if (arr.get(2).equals("진")) {ilju_sal.add("귀문관살");}
+					if (arr.get(2).equals("진")) {ilju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("축")) {ilju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {ilju_sal.add("암금적살");}
 				}
 				// 일지신살
 				// 일지-월간
 				if (arr.get(5).equals("자")) {
-					if (arr.get(2).equals("유")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("유")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("인")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("사")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("축")) {
-					if (arr.get(2).equals("오")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("오")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("묘")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("유")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("인")) {
-					if (arr.get(2).equals("미")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("미")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("진")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("묘")) {
-					if (arr.get(2).equals("신")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("신")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("사")) {wolju_sal.add("격각살");wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("진")) {
-					if (arr.get(2).equals("해")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("해")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("오")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("유")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("사")) {
-					if (arr.get(2).equals("술")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("술")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("미")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("오")) {
-					if (arr.get(2).equals("축")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("축")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("신")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("사")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("미")) {
-					if (arr.get(2).equals("인")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("인")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("유")) {wolju_sal.add("격각살");wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("신")) {
-					if (arr.get(2).equals("묘")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("묘")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("술")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("유")) {
-					if (arr.get(2).equals("자")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("자")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("해")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("사")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("술")) {
-					if (arr.get(2).equals("사")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("사")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("자")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("유")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("해")) {
-					if (arr.get(2).equals("진")) {wolju_sal.add("귀문관살");}
+					if (arr.get(2).equals("진")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(2).equals("축")) {wolju_sal.add("격각살");}
 					else if (arr.get(2).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				// 일지신살
 				// 일지-월지
 				if (arr.get(5).equals("자")) {
-					if (arr.get(6).equals("유")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("유")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("인")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("사")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("축")) {
-					if (arr.get(6).equals("오")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("오")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("묘")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("유")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("인")) {
-					if (arr.get(6).equals("미")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("미")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("진")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("묘")) {
-					if (arr.get(6).equals("신")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("신")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("사")) {wolju_sal.add("격각살");wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("진")) {
-					if (arr.get(6).equals("해")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("해")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("오")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("유")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("사")) {
-					if (arr.get(6).equals("술")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("술")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("미")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("오")) {
-					if (arr.get(6).equals("축")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("축")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("신")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("사")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("미")) {
-					if (arr.get(6).equals("인")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("인")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("유")) {wolju_sal.add("격각살");wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("신")) {
-					if (arr.get(6).equals("묘")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("묘")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("술")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("유")) {
-					if (arr.get(6).equals("자")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("자")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("해")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("사")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("술")) {
-					if (arr.get(6).equals("사")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("사")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("자")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("유")) {wolju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("해")) {
-					if (arr.get(6).equals("진")) {wolju_sal.add("귀문관살");}
+					if (arr.get(6).equals("진")) {wolju_sal.add("귀문관살(일)");}
 					else if (arr.get(6).equals("축")) {wolju_sal.add("격각살");}
 					else if (arr.get(6).equals("축")) {wolju_sal.add("암금적살");}
 				}
 				// 일지신살
 				// 일지-연간
 				if (arr.get(5).equals("자")) {
-					if (arr.get(3).equals("유")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("유")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("인")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("사")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("축")) {
-					if (arr.get(3).equals("오")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("오")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("묘")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("유")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("인")) {
-					if (arr.get(3).equals("미")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("미")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("진")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("묘")) {
-					if (arr.get(3).equals("신")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("신")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("사")) {yunju_sal.add("격각살");yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("진")) {
-					if (arr.get(3).equals("해")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("해")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("오")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("유")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("사")) {
-					if (arr.get(3).equals("술")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("술")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("미")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("오")) {
-					if (arr.get(3).equals("축")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("축")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("신")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("사")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("미")) {
-					if (arr.get(3).equals("인")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("인")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("유")) {yunju_sal.add("격각살");yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("신")) {
-					if (arr.get(3).equals("묘")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("묘")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("술")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("유")) {
-					if (arr.get(3).equals("자")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("자")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("해")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("사")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("술")) {
-					if (arr.get(3).equals("사")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("사")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("자")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("유")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("해")) {
-					if (arr.get(3).equals("진")) {yunju_sal.add("귀문관살");}
+					if (arr.get(3).equals("진")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(3).equals("축")) {yunju_sal.add("격각살");}
 					else if (arr.get(3).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				// 일지신살
 				// 일지-연지
 				if (arr.get(5).equals("자")) {
-					if (arr.get(7).equals("유")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("유")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("인")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("사")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("축")) {
-					if (arr.get(7).equals("오")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("오")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("묘")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("유")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("인")) {
-					if (arr.get(7).equals("미")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("미")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("진")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("묘")) {
-					if (arr.get(7).equals("신")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("신")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("사")) {yunju_sal.add("격각살");yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("진")) {
-					if (arr.get(7).equals("해")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("해")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("오")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("유")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("사")) {
-					if (arr.get(7).equals("술")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("술")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("미")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("오")) {
-					if (arr.get(7).equals("축")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("축")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("신")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("사")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("미")) {
-					if (arr.get(7).equals("인")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("인")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("유")) {yunju_sal.add("격각살");yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("신")) {
-					if (arr.get(7).equals("묘")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("묘")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("술")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("축")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("유")) {
-					if (arr.get(7).equals("자")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("자")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("해")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("사")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("술")) {
-					if (arr.get(7).equals("사")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("사")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("자")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("유")) {yunju_sal.add("암금적살");}
 				}
 				else if (arr.get(5).equals("해")) {
-					if (arr.get(7).equals("진")) {yunju_sal.add("귀문관살");}
+					if (arr.get(7).equals("진")) {yunju_sal.add("귀문관살(일)");}
 					else if (arr.get(7).equals("축")) {yunju_sal.add("격각살");}
 					else if (arr.get(7).equals("축")) {yunju_sal.add("암금적살");}
 				}
@@ -1629,99 +1497,131 @@ public class Another_Sal {
 				
 				// 일간신살
 				// 일간 대 지지
-				// 일간-시간
-				if (arr.get(5).equals("갑")) {
+				// 일간-시지
+				if (arr.get(1).equals("갑")) {
 					if (arr.get(4).equals("오")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("사")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("을")) {
+				else if (arr.get(1).equals("을")) {
 					if (arr.get(4).equals("신")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("자")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("병")) {
+				else if (arr.get(1).equals("병")) {
 					if (arr.get(4).equals("인")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("신")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("정")) {
+				else if (arr.get(1).equals("정")) {
 					if (arr.get(4).equals("미")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("술")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("무")) {
+				else if (arr.get(1).equals("무")) {
 					if (arr.get(4).equals("진")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("묘")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("기")) {
+				else if (arr.get(1).equals("기")) {
 					if (arr.get(4).equals("진")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("사")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("경")) {
+				else if (arr.get(1).equals("경")) {
 					if (arr.get(4).equals("술")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("자")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("신")) {
+				else if (arr.get(1).equals("신")) {
 					if (arr.get(4).equals("유")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("신")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("임")) {
+				else if (arr.get(1).equals("임")) {
 					if (arr.get(4).equals("자")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("술")) {siju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("계")) {
+				else if (arr.get(1).equals("계")) {
 					if (arr.get(4).equals("신")) {siju_sal.add("홍염살");}
 					else if (arr.get(4).equals("묘")) {siju_sal.add("낙정관살");}}
 				
-				// 일간-월간
-				if (arr.get(5).equals("갑")) {
+				//일간-일지
+				if (arr.get(1).equals("갑")) {
+					if (arr.get(5).equals("오")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("사")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("을")) {
+					if (arr.get(5).equals("신")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("자")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("병")) {
+					if (arr.get(5).equals("인")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("신")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("정")) {
+					if (arr.get(5).equals("미")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("술")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("무")) {
+					if (arr.get(5).equals("진")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("묘")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("기")) {
+					if (arr.get(5).equals("진")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("사")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("경")) {
+					if (arr.get(5).equals("술")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("자")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("신")) {
+					if (arr.get(5).equals("유")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("신")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("임")) {
+					if (arr.get(5).equals("자")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("술")) {ilju_sal.add("낙정관살");}}
+				else if (arr.get(1).equals("계")) {
+					if (arr.get(5).equals("신")) {ilju_sal.add("홍염살");}
+					else if (arr.get(5).equals("묘")) {ilju_sal.add("낙정관살");}}
+				
+				// 일간-월지
+				if (arr.get(1).equals("갑")) {
 					if (arr.get(6).equals("오")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("사")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("을")) {
+				else if (arr.get(1).equals("을")) {
 					if (arr.get(6).equals("신")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("자")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("병")) {
+				else if (arr.get(1).equals("병")) {
 					if (arr.get(6).equals("인")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("신")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("정")) {
+				else if (arr.get(1).equals("정")) {
 					if (arr.get(6).equals("미")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("술")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("무")) {
+				else if (arr.get(1).equals("무")) {
 					if (arr.get(6).equals("진")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("묘")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("기")) {
+				else if (arr.get(1).equals("기")) {
 					if (arr.get(6).equals("진")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("사")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("경")) {
+				else if (arr.get(1).equals("경")) {
 					if (arr.get(6).equals("술")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("자")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("신")) {
+				else if (arr.get(1).equals("신")) {
 					if (arr.get(6).equals("유")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("신")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("임")) {
+				else if (arr.get(1).equals("임")) {
 					if (arr.get(6).equals("자")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("술")) {wolju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("계")) {
+				else if (arr.get(1).equals("계")) {
 					if (arr.get(6).equals("신")) {wolju_sal.add("홍염살");}
 					else if (arr.get(6).equals("묘")) {wolju_sal.add("낙정관살");}}
 				
-				// 일간-연간
-				if (arr.get(5).equals("갑")) {
+				// 일간-연지
+				if (arr.get(1).equals("갑")) {
 					if (arr.get(7).equals("오")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("사")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("을")) {
+				else if (arr.get(1).equals("을")) {
 					if (arr.get(7).equals("신")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("자")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("병")) {
+				else if (arr.get(1).equals("병")) {
 					if (arr.get(7).equals("인")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("신")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("정")) {
+				else if (arr.get(1).equals("정")) {
 					if (arr.get(7).equals("미")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("술")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("무")) {
+				else if (arr.get(1).equals("무")) {
 					if (arr.get(7).equals("진")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("묘")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("기")) {
+				else if (arr.get(1).equals("기")) {
 					if (arr.get(7).equals("진")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("사")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("경")) {
+				else if (arr.get(1).equals("경")) {
 					if (arr.get(7).equals("술")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("자")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("신")) {
+				else if (arr.get(1).equals("신")) {
 					if (arr.get(7).equals("유")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("신")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("임")) {
+				else if (arr.get(1).equals("임")) {
 					if (arr.get(7).equals("자")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("술")) {yunju_sal.add("낙정관살");}}
-				else if (arr.get(5).equals("계")) {
+				else if (arr.get(1).equals("계")) {
 					if (arr.get(7).equals("신")) {yunju_sal.add("홍염살");}
 					else if (arr.get(7).equals("묘")) {yunju_sal.add("낙정관살");}}
 				
@@ -1902,11 +1802,190 @@ public class Another_Sal {
 						{siju_sal.add("자축공망");}}
 
 				// 고란살
+				// 일주 기둥이 아래와 같을 경우
+				if (arr.get(1).equals("정") && arr.get(5).equals("사")) {ilju_sal.add("고란살");}
+				else if (arr.get(1).equals("무") && arr.get(5).equals("신")) {ilju_sal.add("고란살");}
+				else if (arr.get(1).equals("신") && arr.get(5).equals("해")) {ilju_sal.add("고란살");}
+				else if (arr.get(1).equals("갑") && arr.get(5).equals("인")) {ilju_sal.add("고란살");}
 				
-//				System.out.print(siju_sal);
-//				System.out.print(ilju_sal);
-//				System.out.print(wolju_sal);
-//				System.out.print(yunju_sal);
+				// 음착살
+				// 일주 기둥이 아래와 같을 경우
+				if (arr.get(1).equals("계") && (arr.get(5).equals("사") || arr.get(5).equals("해"))) {ilju_sal.add("음착살");}
+				else if (arr.get(1).equals("정") && (arr.get(5).equals("미") || arr.get(5).equals("축"))) {ilju_sal.add("음착살");}
+				else if (arr.get(1).equals("신") && arr.get(5).equals("묘") || arr.get(5).equals("유")) {ilju_sal.add("음착살");}
+				
+				// 양차살
+				// 일주 기둥이 아래와 같을 경우
+				if (arr.get(1).equals("임") && (arr.get(5).equals("진")) || arr.get(5).equals("술")) {ilju_sal.add("양차살");}
+				else if (arr.get(1).equals("병") && (arr.get(5).equals("오")) || arr.get(5).equals("자")) {ilju_sal.add("양차살");}
+				else if (arr.get(1).equals("무") && (arr.get(5).equals("인")) || arr.get(5).equals("신")) {ilju_sal.add("양차살");}
+				
+				// 귀문관살 추가
+				// 연지 기준으로, 타지에 있을 경우
+				if (arr.get(7).equals("자")) {
+					if (arr.get(4).equals("유")) {siju_sal.add("귀문관살");}
+					if (arr.get(6).equals("유")) {wolju_sal.add("귀문관살");}}
+				if (arr.get(7).equals("축")) {
+					if (arr.get(4).equals("오")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("오")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				if (arr.get(7).equals("인")) {
+					if (arr.get(4).equals("미")) {siju_sal.add("귀문관살");}
+					if (arr.get(6).equals("미")) {wolju_sal.add("귀문관살");}}
+				if (arr.get(7).equals("묘")) {
+					if (arr.get(4).equals("신")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("신")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				if (arr.get(7).equals("진")) {
+					if (arr.get(4).equals("해")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("해")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				if (arr.get(7).equals("사")) {
+					if (arr.get(4).equals("술")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("술")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				
+				if (arr.get(7).equals("유")) {
+					if (arr.get(4).equals("자")) {siju_sal.add("귀문관살");}
+					if (arr.get(6).equals("자")) {wolju_sal.add("귀문관살");}}
+				if (arr.get(7).equals("오")) {
+					if (arr.get(4).equals("축")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("축")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				if (arr.get(7).equals("미")) {
+					if (arr.get(4).equals("인")) {siju_sal.add("귀문관살");}
+					if (arr.get(6).equals("인")) {wolju_sal.add("귀문관살");}}
+				if (arr.get(7).equals("신")) {
+					if (arr.get(4).equals("묘")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("묘")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				if (arr.get(7).equals("해")) {
+					if (arr.get(4).equals("진")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("진")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				if (arr.get(7).equals("술")) {
+					if (arr.get(4).equals("사")) {siju_sal.add("귀문관살");siju_sal.add("원진살");}
+					if (arr.get(6).equals("사")) {wolju_sal.add("귀문관살");wolju_sal.add("원진살");}}
+				
+				// 귀문관살
+				// 일지 기준- 연지에 있을 경우
+				if (arr.get(5).equals("자")) {
+					if (arr.get(7).equals("유")) {ilju_sal.add("귀문관살");}}
+				if (arr.get(5).equals("축")) {
+					if (arr.get(7).equals("오")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				if (arr.get(5).equals("인")) {
+					if (arr.get(7).equals("미")) {ilju_sal.add("귀문관살");}}
+				if (arr.get(5).equals("묘")) {
+					if (arr.get(7).equals("신")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				if (arr.get(5).equals("진")) {
+					if (arr.get(7).equals("해")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				if (arr.get(5).equals("사")) {
+					if (arr.get(7).equals("술")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				
+				// 반대
+				if (arr.get(5).equals("유")) {
+					if (arr.get(7).equals("자")) {ilju_sal.add("귀문관살");}}
+				if (arr.get(5).equals("오")) {
+					if (arr.get(7).equals("축")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				if (arr.get(5).equals("미")) {
+					if (arr.get(7).equals("인")) {ilju_sal.add("귀문관살");}}
+				if (arr.get(5).equals("신")) {
+					if (arr.get(7).equals("묘")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				if (arr.get(5).equals("해")) {
+					if (arr.get(7).equals("진")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+				if (arr.get(5).equals("술")) {
+					if (arr.get(7).equals("사")) {ilju_sal.add("귀문관살");ilju_sal.add("원진살");}}
+			
+				// 나머지 원진(일->타지)
+				if (arr.get(5).equals("자")) {
+					if (arr.get(4).equals("미")) {siju_sal.add("원진살");}
+					else if (arr.get(6).equals("미")) {wolju_sal.add("원진살");}
+					else if (arr.get(7).equals("미")) {yunju_sal.add("원진살");}}
+				if (arr.get(5).equals("인")) {
+					if (arr.get(4).equals("유")) {siju_sal.add("원진살");}
+					else if (arr.get(6).equals("유")) {wolju_sal.add("원진살");}
+					else if (arr.get(7).equals("유")) {yunju_sal.add("원진살");}}
+				// 타지->일
+				if (arr.get(5).equals("미")) {
+					if (arr.get(4).equals("자")) {siju_sal.add("원진살");}
+					else if (arr.get(6).equals("자")) {wolju_sal.add("원진살");}
+					else if (arr.get(7).equals("자")) {yunju_sal.add("원진살");}}
+				if (arr.get(5).equals("유")) {
+					if (arr.get(4).equals("인")) {siju_sal.add("원진살");}
+					else if (arr.get(6).equals("인")) {wolju_sal.add("원진살");}
+					else if (arr.get(7).equals("인")) {yunju_sal.add("원진살");}}
+				
+				// 현침살
+				// 천간지지에 갑, 신, 묘, 오, 신 포함할 경우
+				if (arr.get(0).equals("갑") || arr.get(0).equals("신")) {siju_sal.add("현침살");}
+				if (arr.get(1).equals("갑") || arr.get(1).equals("신")) {ilju_sal.add("현침살");}
+				if (arr.get(2).equals("갑") || arr.get(2).equals("신")) {wolju_sal.add("현침살");}
+				if (arr.get(3).equals("갑") || arr.get(3).equals("신")) {yunju_sal.add("현침살");}
+				
+				if (arr.get(4).equals("신") || arr.get(4).equals("묘") || arr.get(4).equals("오")) {siju_sal.add("현침살");}
+				if (arr.get(5).equals("신") || arr.get(5).equals("묘") || arr.get(5).equals("오")) {ilju_sal.add("현침살");}
+				if (arr.get(6).equals("신") || arr.get(6).equals("묘") || arr.get(6).equals("오")) {wolju_sal.add("현침살");}
+				if (arr.get(7).equals("신") || arr.get(7).equals("묘") || arr.get(7).equals("오")) {yunju_sal.add("현침살");}
+				
+				// 문곡귀인
+				// 일간-지지
+				if (arr.get(1).equals("갑")) {
+					if (arr.get(4).equals("해")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("해")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("해")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("해")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("을")) {
+					if (arr.get(4).equals("자")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("자")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("자")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("자")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("병") || arr.get(1).equals("무")) {
+					if (arr.get(4).equals("인")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("인")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("인")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("인")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("정") || arr.get(1).equals("기")) {
+					if (arr.get(4).equals("묘")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("묘")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("묘")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("묘")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("경")) {
+					if (arr.get(4).equals("사")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("사")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("사")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("사")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("신")) {
+					if (arr.get(4).equals("오")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("오")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("오")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("오")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("임")) {
+					if (arr.get(4).equals("신")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("신")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("신")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("신")) {ilju_sal.add("문곡귀인");}}
+				if (arr.get(1).equals("계")) {
+					if (arr.get(4).equals("유")) {siju_sal.add("문곡귀인");}
+					else if (arr.get(5).equals("유")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(6).equals("유")) {ilju_sal.add("문곡귀인");}
+					else if (arr.get(7).equals("유")) {ilju_sal.add("문곡귀인");}}
+				
+				// 효신살
+				// 일간-일지
+				if (arr.get(1).equals("갑")) { 
+					if (arr.get(5).equals("자")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("을")) { 
+					if (arr.get(5).equals("해")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("병")) { 
+					if (arr.get(5).equals("인")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("정")) { 
+					if (arr.get(5).equals("묘")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("무")) { 
+					if (arr.get(5).equals("오")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("기")) { 
+					if (arr.get(5).equals("사")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("경")) { 
+					if (arr.get(5).equals("진") || arr.get(5).equals("술")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("신")) { 
+					if (arr.get(5).equals("미") || arr.get(5).equals("축")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("임")) { 
+					if (arr.get(5).equals("신")) {ilju_sal.add("효신살");}	}
+				if (arr.get(1).equals("계")) { 
+					if (arr.get(5).equals("유")) {ilju_sal.add("효신살");}	}
+				
 				
 				
 				setSiju_sal(siju_sal);
