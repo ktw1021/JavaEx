@@ -1986,6 +1986,15 @@ public class Another_Sal {
 				if (arr.get(1).equals("계")) { 
 					if (arr.get(5).equals("유")) {ilju_sal.add("효신살");}	}
 				
+				// 천라지망
+				// 일지에 진사, 월지or시지에 술해
+				// 일지에 술해, 월지or시지에 진사
+				if (arr.get(5).equals("진") || arr.get(5).equals("사")) {
+					if (arr.get(4).equals("술") || arr.get(4).equals("해")) {siju_sal.add("천라지망");}
+					else if (arr.get(6).equals("술") || arr.get(6).equals("해")) {wolju_sal.add("천라지망");}}
+				if (arr.get(5).equals("술") || arr.get(5).equals("해")) {
+					if (arr.get(4).equals("진") || arr.get(4).equals("사")) {siju_sal.add("천라지망");}
+					else if (arr.get(6).equals("진") || arr.get(6).equals("사")) {wolju_sal.add("천라지망");}}
 				
 				
 				setSiju_sal(siju_sal);
