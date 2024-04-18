@@ -38,8 +38,7 @@ public class FortuneApp {
             e.printStackTrace();
         }
 
-    
-    	GapJa_Chungan_YinYang.Chungan_YinYang();
+
     	TwelfthSinSal.Sal();
     	SipSung_Count.Count_SipSung();
     	GapJa_Chungan_Side.sideChungan();

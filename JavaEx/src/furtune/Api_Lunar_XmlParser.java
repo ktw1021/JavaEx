@@ -24,18 +24,18 @@ public class Api_Lunar_XmlParser {
             if (node.getNodeType() == Node.ELEMENT_NODE) {
                 Element element = (Element) node;
                 
-                String lunYear= element.getElementsByTagName("lunYear").item(0).getTextContent();
+                String lunYear	= element.getElementsByTagName("lunYear").item(0).getTextContent();
                 String lunMonth	= element.getElementsByTagName("lunMonth").item(0).getTextContent();
                 String lunDay	= element.getElementsByTagName("lunDay").item(0).getTextContent();
                 String iljin	= element.getElementsByTagName("lunIljin").item(0).getTextContent();
                 
                 
                 System.out.printf("음력 %s년 %s월 %s일 %s%n",lunYear,lunMonth,lunDay,iljin);
-                
                 System.out.println("요일: " + element.getElementsByTagName("solWeek").item(0).getTextContent());
                 System.out.println("윤달 여부: " + element.getElementsByTagName("lunLeapmonth").item(0).getTextContent());
                 System.out.println("-------------------------------------------------");
                 
+                //	GapJa 클래스 호출
             	GapJa.transformer(lunYear,lunMonth,iljin,inputHour);
                 
             	

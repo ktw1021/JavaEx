@@ -11,44 +11,53 @@ public class GapJa_YukChin {
 	private static int gwansung;
 	private static int insung;
 	
+	
 	//	GapJa_Chungan_YinYang 클래스에서 천간지지의 음양 정보 받기.
 	//	천간지지의 enum에서 직접 각 오행 값을 추출. 
+	private static ArrayList<String> element_lst = new ArrayList<>();
+	//	천간의 오행 추출
+	public static String ilgan_element = Enum_HeavenlyStems.valueOf(GapJa.getIlgan()).getElement(); 
+	private static String sigan_element = (Enum_HeavenlyStems.valueOf(GapJa.getSigan())).getElement();	
+	private static String wolgan_element = (Enum_HeavenlyStems.valueOf(GapJa.getWolgan())).getElement();
+	private static String yungan_element = (Enum_HeavenlyStems.valueOf(GapJa.getYungan())).getElement();
+		
+	//	지지의 오행 추출
+	private static String siji_element =(Enum_Zodiacs.valueOf(GapJa.getSiji())).getElement();
+	private static String ilji_element  = (Enum_Zodiacs.valueOf(GapJa.getIlji())).getElement();	
+	private static String wolji_element = (Enum_Zodiacs.valueOf(GapJa.getWolji())).getElement();	
+	private static String yunji_element = (Enum_Zodiacs.valueOf(GapJa.getYunji())).getElement(); 
+	
+	// 천간의 음양 추출
+	private static ArrayList<String> yinYang_lst = new ArrayList<>();
+	private static String yungan_YinYang = Enum_HeavenlyStems.valueOf(GapJa.getYungan()).getYinYang();
+	private static String wolgan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getWolgan())).getYinYang();
+	private static String ilgan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getIlgan())).getYinYang();
+	private static String siganYinYang = (Enum_HeavenlyStems.valueOf(GapJa.getSigan())).getYinYang();
+	
+	// 지지의 음양 추출
+	private static String yunji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getYunji())).getYinYang();
+	private static String wolji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getWolji())).getYinYang();
+	private static String ilji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getIlji())).getYinYang();
+	private static String siji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getSiji())).getYinYang();
+	
+
+
 	public static void YukChin_Chungan() {
+
+		//	천간의 오행 추출을 ArrayList에 추가
+		element_lst.add(ilgan_element); element_lst.add(sigan_element);	
+		element_lst.add(wolgan_element); element_lst.add(yungan_element);
 		
-		//	천간의 오행 추출
-		ArrayList<String> element_lst = new ArrayList<>();
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getIlgan())).getElement()); 
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getSigan())).getElement());	
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getWolgan())).getElement());
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getYungan())).getElement());
+		//	지지의 오행을 ArrayList에 추가
+		element_lst.add(siji_element);	element_lst.add(ilji_element);	
+		element_lst.add(wolji_element);	element_lst.add(yunji_element); 
 		
-		//	지지의 오행 추출
-		element_lst.add((Zodiacs.valueOf(GapJa.getSiji())).getElement());	
-		element_lst.add((Zodiacs.valueOf(GapJa.getIlji())).getElement());	
-		element_lst.add((Zodiacs.valueOf(GapJa.getWolji())).getElement());	
-		element_lst.add((Zodiacs.valueOf(GapJa.getYunji())).getElement()); 
+		//	천간지지의 음양을 ArrayList에 추가
+		yinYang_lst.add(ilgan_YinYang);	yinYang_lst.add(siganYinYang);	
+		yinYang_lst.add(wolgan_YinYang);yinYang_lst.add(yungan_YinYang);
+		yinYang_lst.add(siji_YinYang);	yinYang_lst.add(ilji_YinYang);	
+		yinYang_lst.add(wolji_YinYang);	yinYang_lst.add(yunji_YinYang);
 		
-		// 천간의 음양 추출
-		ArrayList<String> yinYang_lst = new ArrayList<>();
-		String yungan_YinYang = (HeavenlyStems.valueOf(GapJa.getYungan())).getYinYang();
-		String wolgan_YinYang = (HeavenlyStems.valueOf(GapJa.getWolgan())).getYinYang();
-		String ilgan_YinYang = (HeavenlyStems.valueOf(GapJa.getIlgan())).getYinYang();
-		String siganYinYang = (HeavenlyStems.valueOf(GapJa.getSigan())).getYinYang();
-		
-		// 지지의 음양 추출
-		String yunji_YinYang = (Zodiacs.valueOf(GapJa.getYunji())).getYinYang();
-		String wolji_YinYang = (Zodiacs.valueOf(GapJa.getWolji())).getYinYang();
-		String ilji_YinYang = (Zodiacs.valueOf(GapJa.getIlji())).getYinYang();
-		String siji_YinYang = (Zodiacs.valueOf(GapJa.getSiji())).getYinYang();
-		
-		yinYang_lst.add(ilgan_YinYang);
-		yinYang_lst.add(siganYinYang);
-		yinYang_lst.add(wolgan_YinYang);
-		yinYang_lst.add(yungan_YinYang);
-		yinYang_lst.add( siji_YinYang);
-		yinYang_lst.add(ilji_YinYang);
-		yinYang_lst.add(wolji_YinYang);
-		yinYang_lst.add(yunji_YinYang);
 		
 		//	결과값을 저장할 육친 어레이
 		ArrayList<String> yukchin = new ArrayList<>();
@@ -57,9 +66,8 @@ public class GapJa_YukChin {
 		String ilgan = "아신"; 
 		yukchin.add(ilgan);
 		
-		//	(0)비겁, (1)식상, (2)재성, (3)관성, (4)인성 카운트
-
 		
+		//	(0)비겁, (1)식상, (2)재성, (3)관성, (4)인성 카운트
 		//	시간부터 연지까지 차례로 루프
 		for (int i = 1; i<5; i++) {
 			
@@ -78,9 +86,9 @@ public class GapJa_YukChin {
 				// '화'의 경우,
 				if (element_lst.get(0).equals("火")) {
 					if (element_lst.get(i).equals("土")) {yukchin.add("식신");siksang++;}
-					else if (element_lst.get(i).equals("木")) {yukchin.add("편재");jaesung++;}
+					else if (element_lst.get(i).equals("金")) {yukchin.add("편재");jaesung++;}
 					else if (element_lst.get(i).equals("水")) {yukchin.add("편관");gwansung++;}
-					else if (element_lst.get(i).equals("金")) {yukchin.add("편인");insung++;}
+					else if (element_lst.get(i).equals("木")) {yukchin.add("편인");insung++;}
 					}
 				// '수'의 경우,
 				else if (element_lst.get(0).equals("水")) {
@@ -115,9 +123,9 @@ public class GapJa_YukChin {
 				// '화'의 경우,
 				if (element_lst.get(0).equals("火")) 
 				{if (element_lst.get(i).equals("土")) {yukchin.add("상관");siksang++;}
-					else if (element_lst.get(i).equals("木")) {yukchin.add("정재");jaesung++;}
+					else if (element_lst.get(i).equals("金")) {yukchin.add("정재");jaesung++;}
 					else if (element_lst.get(i).equals("水")) {yukchin.add("정관");gwansung++;}
-					else if (element_lst.get(i).equals("金")) {yukchin.add("정인");insung++;}
+					else if (element_lst.get(i).equals("木")) {yukchin.add("정인");insung++;}
 				}
 				// '수'의 경우,
 				else if (element_lst.get(0).equals("水")) {
@@ -152,18 +160,6 @@ public class GapJa_YukChin {
 		System.out.printf("%s   \t%s   \t%s   \t%s%n",yukchin.get(1),yukchin.get(0),yukchin.get(2),yukchin.get(3));
 	}
 	public static void YukChin_jiji(ArrayList <String> yinYang_lst) {
-		//	천간의 오행 추출
-		ArrayList<String> element_lst = new ArrayList<>();
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getIlgan())).getElement()); 
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getSigan())).getElement());	
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getWolgan())).getElement());
-		element_lst.add((HeavenlyStems.valueOf(GapJa.getYungan())).getElement());
-		
-		//	지지의 오행 추출
-		element_lst.add((Zodiacs.valueOf(GapJa.getSiji())).getElement());	
-		element_lst.add((Zodiacs.valueOf(GapJa.getIlji())).getElement());	
-		element_lst.add((Zodiacs.valueOf(GapJa.getWolji())).getElement());	
-		element_lst.add((Zodiacs.valueOf(GapJa.getYunji())).getElement()); 
 		
 
 		//	결과값을 저장할 육친 어레이
@@ -176,19 +172,21 @@ public class GapJa_YukChin {
 			// 비견 조건(일간과 음양, 오행이 같음)
 			if (element_lst.get(0).equals(element_lst.get(i)) && yinYang_lst.get(0).equals(yinYang_lst.get(i))) {
 				yukchin.add("비견");
+				bigup++;
 			}
 			// 겁재 조건(일간과 오행이 같고, 음양이 다름)
 			else if (element_lst.get(0).equals(element_lst.get(i)) && !yinYang_lst.get(0).equals(yinYang_lst.get(i))) {
 				yukchin.add("겁재");
+				bigup++;
 			}
 			// 그 후, 음양이 같을 경우, 1- 식신(일간이 생), 2-편재(일간이 극), 3-편관(일간을 극), 4-편인(일간을 생)  
 			else if (yinYang_lst.get(0).equals(yinYang_lst.get(i))) {
 				// '화'의 경우,
 				if (element_lst.get(0).equals("火")) {
 					if (element_lst.get(i).equals("土")) {yukchin.add("식신");siksang++;}
-					else if (element_lst.get(i).equals("木")) {yukchin.add("편재");jaesung++;}
+					else if (element_lst.get(i).equals("金")) {yukchin.add("편재");jaesung++;}
 					else if (element_lst.get(i).equals("水")) {yukchin.add("편관");gwansung++;}
-					else if (element_lst.get(i).equals("金")) {yukchin.add("편인");insung++;}
+					else if (element_lst.get(i).equals("木")) {yukchin.add("편인");insung++;}
 				}
 				// '수'의 경우,
 				else if (element_lst.get(0).equals("水")) {
@@ -224,9 +222,9 @@ public class GapJa_YukChin {
 				// '화'의 경우,
 				if (element_lst.get(0).equals("火")) {
 					if (element_lst.get(i).equals("土")) {yukchin.add("상관");siksang++;}
-					else if (element_lst.get(i).equals("木")) {yukchin.add("정재");jaesung++;}
+					else if (element_lst.get(i).equals("金")) {yukchin.add("정재");jaesung++;}
 					else if (element_lst.get(i).equals("水")) {yukchin.add("정관");gwansung++;}
-					else if (element_lst.get(i).equals("金")) {yukchin.add("정인");insung++;}
+					else if (element_lst.get(i).equals("木")) {yukchin.add("정인");insung++;}
 				}
 				// '수'의 경우,
 				else if (element_lst.get(0).equals("水")) {

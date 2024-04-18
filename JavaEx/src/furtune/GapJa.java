@@ -1,5 +1,7 @@
 package furtune;
 
+import java.util.ArrayList;
+
 public class GapJa {
 	
 	private String ilju;
@@ -11,6 +13,8 @@ public class GapJa {
 	private static String wolji;
 	private static String sigan;
 	private static String siji;
+
+	
 	
 	public static String getYungan() {
 		return yungan;
@@ -67,6 +71,7 @@ public class GapJa {
 	public static void setIlji(String newIlji) {
 		ilji = newIlji;
 	}
+	
 	
 	public static void transformer(String lunYear, String lunMonth, String lunDay,int inputHour) {
 
@@ -177,25 +182,53 @@ public class GapJa {
 	    else if (si >= 17 && si < 19) { setSigan("신"); } else if (si >= 19 && si < 21) { setSigan("임"); } else if (si >= 21 && si < 23) { setSigan("계"); }
 	}
 	
-	String siganElement = (HeavenlyStems.valueOf(sigan)).getElement();
-	String ilganElement = (HeavenlyStems.valueOf(ilgan)).getElement();
-	String wolganElement = (HeavenlyStems.valueOf(wolgan)).getElement();
-	String yunganElement = (HeavenlyStems.valueOf(yungan)).getElement();
+	// 천간의 오행 추출
+	String sigan_Element = (Enum_HeavenlyStems.valueOf(sigan)).getElement();
+	String ilgan_Element = (Enum_HeavenlyStems.valueOf(ilgan)).getElement();
+	String wolgan_Element = (Enum_HeavenlyStems.valueOf(wolgan)).getElement();
+	String yungan_Element = (Enum_HeavenlyStems.valueOf(yungan)).getElement();
 	
-	String sijiElement = (Zodiacs.valueOf(siji)).getElement();
-	String iljiElement = (Zodiacs.valueOf(ilji)).getElement();
-	String woljiElement = (Zodiacs.valueOf(wolji)).getElement();
-	String yunjiElement = (Zodiacs.valueOf(yunji)).getElement();
+	// 지지의 오행 추출
+	String siji_Element = (Enum_Zodiacs.valueOf(siji)).getElement();
+	String ilji_Element = (Enum_Zodiacs.valueOf(ilji)).getElement();
+	String wolji_Element = (Enum_Zodiacs.valueOf(wolji)).getElement();
+	String yunji_Element = (Enum_Zodiacs.valueOf(yunji)).getElement();
 	
-	System.out.printf("*시주*\t*일주*\t*월주*\t*연주*%n");
-	GapJa_YukChin.YukChin_Chungan();
-	System.out.printf("%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)%n"
-					+ "%s(%s) \t %s(%s) \t %s(%s) \t %s(%s)%n",
-					sigan,siganElement,ilgan,ilganElement,wolgan,wolganElement,yungan,yunganElement,
-					siji,sijiElement,ilji,iljiElement,wolji,woljiElement,yunji,yunjiElement);
+	// 천간의 음양 추출
+	String yungan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getYungan())).getYinYang();
+	String wolgan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getWolgan())).getYinYang();
+	String ilgan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getIlgan())).getYinYang();
+	String sigan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getSigan())).getYinYang();
 	
+	// 지지의 음양 추출
+	String yunji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getYunji())).getYinYang();
+	String wolji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getWolji())).getYinYang();
+	String ilji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getIlji())).getYinYang();
+	String siji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getSiji())).getYinYang();
+	
+	// 천간지지의 음양 리스트화(일간 기준으로 순서대로 정렬)
+	ArrayList<String> yinYang_lst = new ArrayList<>();
+	yinYang_lst.add(ilgan_YinYang);	yinYang_lst.add(sigan_YinYang);	yinYang_lst.add(wolgan_YinYang);yinYang_lst.add(yungan_YinYang); 
+	yinYang_lst.add(siji_YinYang);	yinYang_lst.add(ilji_YinYang);	yinYang_lst.add(wolji_YinYang);	yinYang_lst.add(yunji_YinYang); 
 	
 
+	// 추출된 천간지지의 음양오행을, 육친 클래스에서 처리하여 반환
+
+	
+
+	
+	System.out.printf("*시주*\t*일주*\t*월주*\t*연주*%n");
+	//	4개 기둥 위쪽에 천간의 십신 호출
+	GapJa_YukChin.YukChin_Chungan();
+	System.out.printf("%s%s%s \t %s%s%s \t %s%s%s \t %s%s%s%n"
+					+ "%s%s%s \t %s%s%s \t %s%s%s \t %s%s%s%n",
+					sigan,sigan_Element,sigan_YinYang,		ilgan,ilgan_Element,ilgan_YinYang,
+					wolgan,wolgan_Element,wolgan_YinYang,	yungan,yungan_Element,yungan_YinYang,
+					siji,siji_Element,siji_YinYang,			ilji,ilji_Element,ilji_YinYang,	
+					wolji,wolji_Element,wolji_YinYang,		yunji,yunji_Element,yunji_YinYang);
+	
+	
+	GapJa_YukChin.YukChin_jiji(yinYang_lst);
     
 }
 }

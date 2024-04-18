@@ -6,29 +6,29 @@ import java.util.ArrayList;
 public class GapJa_Chungan_YinYang {
 
 	private GapJa gapJa;
-	private HeavenlyStems stem;
+	private Enum_HeavenlyStems stem;
 	
 	public GapJa_Chungan_YinYang(GapJa gapJa) {
 		this.gapJa=gapJa;
 	}
 	
-	public GapJa_Chungan_YinYang(HeavenlyStems stem) {
+	public GapJa_Chungan_YinYang(Enum_HeavenlyStems stem) {
 		this.stem=stem;
 	}
 	
 	public static void Chungan_YinYang() {
 
 		// 천간의 음양 추출
-		String yungan_YinYang = (HeavenlyStems.valueOf(GapJa.getYungan())).getYinYang();
-		String wolgan_YinYang = (HeavenlyStems.valueOf(GapJa.getWolgan())).getYinYang();
-		String ilgan_YinYang = (HeavenlyStems.valueOf(GapJa.getIlgan())).getYinYang();
-		String siganYinYang = (HeavenlyStems.valueOf(GapJa.getSigan())).getYinYang();
+		String yungan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getYungan())).getYinYang();
+		String wolgan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getWolgan())).getYinYang();
+		String ilgan_YinYang = (Enum_HeavenlyStems.valueOf(GapJa.getIlgan())).getYinYang();
+		String siganYinYang = (Enum_HeavenlyStems.valueOf(GapJa.getSigan())).getYinYang();
 		
 		// 지지의 음양 추출
-		String yunji_YinYang = (Zodiacs.valueOf(GapJa.getYunji())).getYinYang();
-		String wolji_YinYang = (Zodiacs.valueOf(GapJa.getWolji())).getYinYang();
-		String ilji_YinYang = (Zodiacs.valueOf(GapJa.getIlji())).getYinYang();
-		String sijiYinYang = (Zodiacs.valueOf(GapJa.getSiji())).getYinYang();
+		String yunji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getYunji())).getYinYang();
+		String wolji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getWolji())).getYinYang();
+		String ilji_YinYang = (Enum_Zodiacs.valueOf(GapJa.getIlji())).getYinYang();
+		String sijiYinYang = (Enum_Zodiacs.valueOf(GapJa.getSiji())).getYinYang();
 		
 		// 천간지지의 음양 리스트화(일간 기준으로 순서대로 정렬)
 		ArrayList<String> yinYang_lst = new ArrayList<>();
