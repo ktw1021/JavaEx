@@ -21,7 +21,6 @@ public class HR_PreparedSearchEmployees {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		conn = DriverManager.getConnection(dburl,"hr","hr");
 		
-		String likePattern = "%" + scOb.toLowerCase() + "%";
 		String qul = "    SELECT last_name || ' ' || first_name AS full_name, "
 				+ 				"email AS mail, "
 				+ 				"phone_number AS ph, "
@@ -30,6 +29,7 @@ public class HR_PreparedSearchEmployees {
 				+ "        WHERE LOWER(last_name) LIKE ?\r\n"
 				+ "        OR LOWER(first_name) LIKE ?";
 		pstmt = conn.prepareStatement(qul);
+		String likePattern = "%" + scOb.toLowerCase() + "%";
 		pstmt.setNString(1, likePattern);
 		pstmt.setNString(2, likePattern);
 		rs=pstmt.executeQuery();
