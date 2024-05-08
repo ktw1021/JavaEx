@@ -12,7 +12,6 @@ public class HrMain {
 	public static void main(String [] args) {
 		
 		listHr();
-		System.out.println();
 		
 		
 		String select = null;
@@ -20,6 +19,7 @@ public class HrMain {
 	
 		try {
 			while (button==0) {
+				System.out.println();
 				System.out.println("1.이름검색  2.급여조회  3.종료");
 				select = sc.next();
 				if (Integer.parseInt(select)==1) {
