@@ -14,25 +14,36 @@ public class HrMain {
 		System.out.println();
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("1.검색  2.급여조회  3.종료");
-		String select = sc.next();
-		int button = 0;
 		
-		while (button==0) {
-		if (Integer.parseInt(select)==1) {
-			searchHR();	
+		String select = null;
+		int button = 0;
+	
+		try {
+			while (button==0) {
+				System.out.println("1.이름검색  2.급여조회  3.종료");
+				select = sc.next();
+				if (Integer.parseInt(select)==1) {
+					searchHR();	
+				}
+				else if (Integer.parseInt(select)==2) {
+					salarying();
+				}
+				else if (Integer.parseInt(select)==3) {
+					System.out.println("종료합니다.");
+					button = 1;
+				}
+				else {
+					System.out.println("다시 입력해주세요.");
+				}
+			}
+		} catch (NumberFormatException e) {
+			System.err.println("제대로 된 숫자를 입력해주세요.");
+			System.err.println("오류로 프로그램을 종료합니다.");
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
-		else if (Integer.parseInt(select)==2) {
-			salarying();
-		}
-		else if (Integer.parseInt(select)==3) {
-			System.out.println("종료합니다.");
-			button = 1;
-		}
-		else {
-			System.out.println("다시 입력해주세요.");
-		}
-		}
+		sc.close();
+		
 	}
 	
 	private static void listHr() {
