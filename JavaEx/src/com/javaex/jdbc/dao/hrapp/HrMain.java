@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 public class HrMain {
 
+	private static Scanner sc = new Scanner(System.in);
 	HrDAOImplOracle daOracl;
 	
 	public static void main(String [] args) {
@@ -13,7 +14,6 @@ public class HrMain {
 		listHr();
 		System.out.println();
 		
-		Scanner sc = new Scanner(System.in);
 		
 		String select = null;
 		int button = 0;
@@ -83,7 +83,6 @@ public class HrMain {
 				vo.getFull_name(),vo.getEmail(),vo.getHp(),vo.getHire_date());
 		} 
 		}
-		sc.close();	
 	}
 	
 	private static void salarying() {
@@ -103,7 +102,6 @@ public class HrMain {
 				System.out.printf("%-20s %-20d%n",vo.getFull_name(),vo.getSalary());
 			}
 		}
-		sc.close();
 	}
 	
 }
